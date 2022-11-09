@@ -8,8 +8,52 @@
 </head>
 <body>
     <h1>Conditionals Lessons</h1>
+    <br>
+    <h2>U5L2 If Statements</h2>
     <ul>
-        <li>U5L2 If Statements</li>
+        <li>conditional--a statement that has a condition or requirement (ex:  If a person is 18, then that person can vote)</li>
+        <li>Writing conditionals in JS:</li>
+        <ul>
+            <li>if (condition is true){<br>
+                run code in the curly brackets<br>}</li>
+        </ul>
+        <li>If the condition is false, the code inside the corresponding brackets will not run.</li>
+        <li><a href="U5L2_IfStatements.html">If Statements Practice</a></li>
+    </ul>
+    <h2>U5L3 Inequalities in JS</h2>
+    <ul>
+        <li>Use >= for greater than or equal to (Note:  this means greater than OR equal to, not AND)</li>
+        <li>Use <= for less than or equal to</li>
+        <li>You can NOT use = in if statements b/c = means "assign" in coding</li>
+        <li>Use == to check if two numbers are equal.  You can also use == to check if two strings are equal to each other (Note:  capitalization and spacing must be same for statement to be considered true)</li>
+        <li>In JS, numbers can be considered equal to strings if the number matches the text of the string (number is converted to string).  Unlike many other languages, JS will try to match the two values to the best of its ability.</li>
+            <ul>
+                <li>Ex:  "18" == 18 is considered a true statement in JS</li>
+                <li>let age = "16"; age == 16   is true</li>
+                <li>let age = 17; age == "17"   is true</li>
+            </ul>
+        <li>Use === to check if two statements are EXACTLY equal--in both characters and data type</li>
+            <ul>
+                <li>Ex:  18 === "18" is considered a false statement</li>
+            </ul>
+
+    </ul>
+    <h2>U5L4 Else If and Else (And Alerts and Prompts)</h2>
+    <ul>
+        <li> <a href="U5L4_ElseIfandElse.html">Prompts, Alerts, and Else If and Else Practice</a></li>
+        <li> <a href="U5L4_AssessmentHTML.html">U5L4 Assessment</a></li>
+    </ul>
+    <h2>U5L5 Nested Conditionals</h2>
+    <ul>
+        <li>You can nest if/else if statements inside of other if statements.</li>
+        <li> <a href = "U5L5_NestedConditionalsPractice.html">Nested Conditionals--Text adventure</a></li>
+    </ul>
+    <h2>U5L6 Uploading:  Referencing files w/ anchor tag</h2>
+    <ul>
+        <li>/ is used when telling the computer to find a folder within the same overarching folder or to find a document within the folder you are looking for  ./ is a relative reference--it means reference everything relative to the file you are trying to put the link in</li>
+        <ul>
+            <li>Ex:  Trying to reference U5L2IfStatements.html file in U5 from index.html:  href = "./U5_Conditionals/U5L2_IfStatements.html"</li>
+        </ul>
     </ul>
 </body>
 </html>
