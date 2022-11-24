@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U6 Functions</title>
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>U6 Functions</h1>
+    <h2>U6L1 Intro to Functions</h2>
+    <ul>
+        <li>Function:</li>
+        <ul>
+            <li>Give a "chunk" of code a name.  Every time you type in that function name in code, it repeats the chunck.</li>
+            <li>A subroutine consisting of one or more lines of code.  The subroutine can be called by typing in the name of the subroutine.</li>
+        </ul>
+        <li>General Function Structure:</li>
+        <ul>
+            <li>function functionName(){<br>code that will run...<br>}</li>
+            <li>Another way to write it:  let functionName = () => {<br>code in here...<br>}</li>
+            <li>Calling the function:  functionName();</li>
+        </ul>
+        <li>You can call a function more than once</li>
+        <li><a href="U6L1Practice.html">U6L1 Practice</a></li>
+    </ul>
+    <h2>U6L2 Parameters and Arguments</h2>
+    <ul>
+        <li>Parameters are variables that you can "require" when a function is called</li>
+        <li>Arguments are the values you "pass" to parameters when you call the function</li>
+        <li>Example:</li>
+        <ul>
+            <li>function calc_area_rect(l, w){<br>let area = l*w;<br>alert("The area of the rectangle with length" + l + " and width " + w + " is " + area);<br>}</li>
+            <li>calc_area_rect(5, 10);  //alert will give 50 as answer (5 is length, 10 is width)</li>
+        </ul>
+        <li>To see another example, open the console in U6L1Practice.html</li>
+        <li>You can call a function as many times as you want, and each call can have different parameters</li>
+        <li>Parameters can also be strings</li>
+        <ul>
+            <li>function greet(name, job){<br>alert("Welcome, " + name + "!  We are glad to have a " + job + " at the convention today!"<br>}</li>
+            <li>greet("Bob", "surgeon");   //message will be "Welcome, Bob!  We are glad to have a surgeon at the conventoin today!"</li>
+        </ul>
+        <li>If you specify more arguments than there are parameters, you will get an error message</li>
+        <li>Typically, all of the function calls are placed at the end of the document.</li>
+        <li><a href="U6L2Assessment.html">U6L2 Assessment</a></li>
+    </ul>
+    <h2>U6L3 Return Statements</h2>
+    <ul>
+        <li>While you can specify a specific way to print the output of a function (ex:  an alert), this is "hard-coded" into the code itself--in other words, you have already specified how the information is going to be printed (you would have to change the output type if you wanted it to be console.log() or the response to a button click)</li>
+        <ul><li>In other words, if you fix the calculation code of a function with the displaying of the info, you are kind of stuck--if you want to change the output type, you have to go and rewrite the output (ex:  make alert(output code); --> console.log(output code);.  Or if you just want a function to do something and just give you an answer back, a return is often more practical</li></ul>
+        <li>Ex of return statement:  Math.pow(3,4); //means 3^4 and returns that answer value</li>
+        <li>Syntax for return statements:  return variableName;</li>
+        <li>You can manipulate the returned variable outside of the function (see U6L3Practice.html)</li>
+        <li>Returning a value establishes that value as the "final answer" to this function and allows it to be called later in multiple different ways outside of the function</li>
+        <li>Example:</li>
+        <ul>
+            <li>function greet(name, job){<br>return ("Welcome, " +name+ " the " +job+ "!");<br>}</li>
+            <li>alert(greet("Bob", "surgeon"));</li>
+        </ul>
+        <li><a href="U6L3Practice.html">U6L3 Practice</a></li>
+    </ul>
+    <h2>U6L4 Buttons, getElementById, and Button Functions</h2>
+    <ul>
+        <li><a href="U6L4Practice.html">U6L4 Practice and Assessment</a></li>
+        <li>You can reference almost anything in the window (the html document) using JS--by ID, element, class, etc.</li>
+        <li>In a JS document (or in the console), typing document will reference the entire html document.   document.___ allows you to call a specific item/group by a property (ex:  document.getElementById("_elementID_");)</li>
+        <li>If you type document.getElementById("_elementID_"); in the console, you get the html code for the code with that ID</li>
+        <li>To access the selected code w/ getElementById later, you have to store it in a JS variable</li>
+        <li>There is no set convention for naming element IDs.  However, major companies usually use all lowercase and hyphens to separate the words in ID and class names (ex:  click-me) in HTML and use camelCase (ex:  clickMe) in JS.</li>
+        <li>ID and class names should also be meaningful so you and other people can understand your code later</li>
+        <li>If you have buttons or other things that interact with JS after the page load, you need to type <b>defer</b> after including the source code for the script.  This tells the JS code to load after the rest of the document is loaded (this is very important if the script code is placed earlier in the code than what the code references).</li>
+        <li>Ex linking JS:  &#60;script src="buttons.js" defer&#62; &#60;/script &#62;</li>
+        <ul>
+            <li>Displaying HTML tags as plain text in HTML:  <a target="_blank"; href="https://www.geeksforgeeks.org/how-to-display-html-tags-as-plain-text-in-html/">Goes to another site</a></li>
+        </ul>
+    </ul>
+    <h2>U6L5 Text Areas</h2>
+    <ul>
+        <li><a href="U6L5Practice.html">U6L5 Practice</a></li>
+        <li>Technically you should use forms for text inputs, but text areas are faster.  You can both get input and give outputs using text boxes.</li>
+        <li>cols="_number_" tells the number of columns to put in the text box (the numer of characters in one row of textbox based on initial size); rows="_number_" gives number of rows (NOTE:  this is the syntax for inside the element tags, NOT CSS)</li>
+        <li>You can use .value to get or define (depends on context) the value inside of an element (for instance, the text inside a text box)</li>
+    </ul>
+    <h2>U6L6 Final Project</h2>
+    <ul><li><a href="U6L6Project.html">Final Project</a></li></ul>
+</body>
+</html>
