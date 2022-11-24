@@ -79,6 +79,7 @@ let buttons = document.getElementById("buttons");
         }
         /**Round3*/opt1.onclick = function(){//incorrect--out
             response.value = "You take the right path and to your dismay see a sign that says, 'Dead end.  You lost the game.'";
+            buttons.innerHTML = "";
         }
     }
 }
