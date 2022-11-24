@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U6L1 Practice</title>
+</head>
+<body>
+    <p id="text">Welcome to my website!</p>
+    <div id="moreText">
+        <button id = "button" type = "button" onclick="printhello()">Start</button>
+    </div>
+    <p id = "calculation">Find Area of Square (Using prompt, not parameter)</p>
+    <button id="numbers" onclick = "findarea_square()">Find Area</button>
+    <script defer>
+        //probably should make this script a separate document
+        let text = document.getElementById("text");
+        let moreText = document.getElementById("moreText");
+        let button = document.getElementById("button");
+        function printhello(){
+            alert("Hello!");
+            let name = prompt("What is your name?");
+            alert("Nice to meet you, " + name + "!");
+            text.innerHTML = 'Welcome to my website, ' + name + '!';
+            moreText.innerHTML = "<p>How are you today?</p><br><p>Lorem ipsum...</p>";
+        }
+        //if I wanted to call it at the beginning of the program, I could just type "printhello();" here
+        let helloWorld = () => {
+            console.log("Hello World!");
+        }
+        helloWorld();//calling the function
+        helloWorld();//calling it again
+
+        let calculation = document.getElementById("calculation");
+        let numbers = document.getElementById("numbers");
+        function findarea_square(){
+            let sideLength = prompt("What is the length of one side of the square?");
+            let answer = sideLength**2;
+            calculation.innerHTML = "The area of the square is " + answer
+        }
+
+        console.log("You can find the area of a circle using 'findarea_circle(radius);'");
+        function findarea_circle(radius){
+            let answer = Math.PI*radius**2;
+            console.log(answer);
+        }
+    </script>
+
+</body>
+</html>

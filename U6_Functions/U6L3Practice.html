@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U6L3 Practice Return Statments</title>
+</head>
+<body>
+
+    <script defer>
+        function calc_area_circle(r){
+            let circleArea = Math.PI*r**2;
+            return circleArea;//establishes this as the "answer" to this function and allows it to be called later in multiple different ways
+        }
+        /**let circleArea = calc_area_circle(4);
+        alert("Circle area is " + circleArea);**///This code also works
+
+        //plot is a circle, and two carrots can be planted per square foot
+        let my_circleArea = calc_area_circle(3);
+        console.log("Circle area is " + my_circleArea);
+        let numCarrots = Math.floor(my_circleArea*2);
+        console.log("You can plant " + numCarrots + " carrots.");
+
+        function greet(name, job){
+            return ("Welcome, " +name+ " the " +job+ "!");
+        }
+        alert(greet("Bob", "surgeon"));
+
+        //Assessment
+        /**function calc_area_square(side){
+            let area = side**2;
+            return area;
+        }
+        let my_square_area = calc_area_square(5);
+        alert(my_square_area);**///NOT the assessment
+        function calc_volume(side){
+            let volume = side**3;
+            return volume;
+            //alert("The volume of a cube with side length " +side+ " is " +volume+".");
+        }
+        
+        function calc_area(height, length){
+            let area = 0.5*height*length;
+            return area;
+            //alert("The area of a triangle with height " +height+ " and length " +length+ " is " +area+ ".");
+        }
+        let my_cube_area = calc_volume(4);
+        alert("The volume of the cube is " + my_cube_area);
+
+        let my_triangle_area = calc_area(4, 3);
+        alert("The volume of the triangle is " + my_triangle_area);
+
+
+    </script>
+
+</body>
+</html>
