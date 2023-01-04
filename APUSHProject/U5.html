@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 5</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U5PicFortSumter2.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+
+            /*height: 100vh;
+            width: 100vw;*/
+        }
+        .header{
+            background-color: rgb(48, 53, 109);
+            /*background-color:rgb(61, 68, 139);*/
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            opacity: 0.9;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);   */ 
+            /*grid-column-start: 6;
+            grid-column-end: 7;*/
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            opacity: 0.9; 
+        }
+        .image{
+            width: 100%;
+            fill-opacity: 1;
+            max-height:300px;
+            overflow:auto;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+            opacity: 90%;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109);
+            /*background-color:rgb(61, 68, 139);*/
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>The Division and Reunification of a Nation</b></p>
+        <p align="center" style="font-size: 20px;">Unit 5:  1844-1877</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-5</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            
+            <p id="KC1"><b>Key Concept 5.1:  In this era, the United States established more connections with the rest of the world, followed an expansionist foreign policy in the Western Hemisphere, and became a destination for many immigrants.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+            <ul>
+                <li><b>5.1I Expansion of land and trade:</b>  Because of popular enthusiasm for US expansionism (partly because of economic and security interests), the US gained new territories and created new overseas initiatives, and many people migrated west.  Some reasons westward migration increased were because of natural and mineral resources (many hoped they could find and sell these for great profit) and want of religious refuge.  During and after the Civil War, westward migration also increased as a result of new legislation promoting transportation and economic development in the west.  The US also focused on the issue of annexation.  Those who favored annexation of western lands claimed that Manifest Destiny and the superiority of US institutions meant that the US had to expand its borders all the way to the Pacific.  These interests were reflected by the US’s addition of large western territories through winning the Mexican-American War and making negotiations.  However, the addition of these territories raised questions over slavery, Native Americans, and Mexicans in the new territories.  The US was also interested in expanding trade, which resulted in efforts to develop more ties with Asia.</li>
+                <li><b>5.1II Immigration and surrounding issues:</b>  As the US population grew in the 1840s and 1850s through immigration and changing borders, Americans continued to debate about the rights and citizenship of several different groups.  Many international immigrants continued to arrive from Europe and Asia, mainly from Ireland and Germany.  They often settled in ethnic communities that allowed them to preserve elements of their cultures, such as language and customs.  However, a strong anti-Catholic nativist movement that wanted to limit new immigrants’ political power and cultural influence arose.  Meanwhile, the US government interacted and conflicted with Mexican Americans and Native Americans more as the government took these regions from them, changing these groups’ cultures and economic self-sufficiency as a result.</li>
+                <li><b>5.1III Reform movements:</b>  More Americans began working—mainly outside of the government—to advocate for certain ideas, partly because of new religious and intellectual movements.  They formed voluntary organizations that aimed to change individuals and society.  These included the temperance movement, the abolitionist movement, the women’s rights movement, and other reform movements.  Abolitionist movements gradually succeeded in the North, ending slavery there and thus contributing to the growth of the free African American population, even though they still had restricted rights.  However, abolitionists were largely unsuccessful in the South, and their efforts were largely limited to unsuccessful slave rebellions.  The women’s rights movement was also active during this time.  People involved in this movement expressed their goals of greater equality and opportunies for women at the Seneca Falls Convention.</li>
+            </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 5.2:  As a result of debates over slavery and other economic, cultural and political issues, which were exacerbated by expansion and increasing sectionalism, the US went to civil war.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>5.2I Differing views of slavery:</b>  Views in the North and South became increasingly different and conflicting because of ideological and economic differences pertaining to slavery.  In the North, its growing manufacturing economy relied on free labor.  Additionally, although they were a minority in the North for a long time, African Americans and white abolitionists campaigned against slavery through presenting moral arguments against it, helping slaves escape, and sometimes showing they were willing to resort to violence to achieve their goals.  There were also some Northerners who didn’t object to slavery on principle, but believed that it would challenge the free-labor market.  These were the grounds on which the free-soil movement protested against the expansion of slavery.  On the other hand, the South’s economy became increasingly dependent on slave labor.  They defended the institution of slavery, believing that states’ rights—including those pertaining to slavery—were protected by the Constitution and that slavery was beneficial to society.</li>
+                    <li><b>5.2II Debates and failed compromises:</b>  In the 1850s, debates over slavery became a very important in US politics.  After the Mexican Cession, debates increased and tensions grew as the government had to decide whether or not to allow slavery in the new territories.  Although many attempts were made to resolve quarrels about slavery in territories—such as the Compromise of 1850, the Kansas-Nebraska Act, and the Dred Scott Decision—they did little to mitigate the problem.  Divides over slavery and anti-immigrant sentiment led to the end of the Second Party System (Whigs and Democrats) and the rise of sectional parties, including the Republican Party, which gained members such as Lincoln, a free-soiler.  Ultimately, Lincoln’s election as president in 1860 despite receiving no electoral votes from the South led to most slave states voting to leave the Union, eventually resulting in the Civil War.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 5.3:  The Union won the Civil War, defeating the Confederacy in 1865.  While Reconstruction resolved the issues of slavery and secession, it didn’t completely answer questions about the power of the federal government and citizens' rights.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>5.3I The Civil War:</b>  The North and the South had similar and different advantages and strategies in the Civil War.  Both used their economies and societies in the war, even as they faced opposition from their home fronts.  However, while the North had more soldiers, more industrial resources, and the leadership of Lincoln and others, the South showed military advantages such as better military leaders early in the war.  To win the war, the North had to adapt and improve.  Although Lincoln and most Union allies started the war to preserve the Union, Lincoln’s issuance of the Emancipation Proclamation shifted the focus of the war and helped prevent the Confederacy from gaining European powers’ support.  Lincoln also used speeches such as the Gettysburg Address to represent the fight against slavery as fulfilling the democratic ideas from America’s founding.  Through these tactics—as well as leadership and strategy improvements, crucial victories, more resources, and the destruction of the South’s infrastructure through warfare—the Union was able to secure victory.</li>
+                    <li><b>5.3II Reconstruction:</b>  Not only did the end of the Civil War and the Reconstruction of the South signal the end of slavery, but they also changed the relationships between state and federal governments and created debates over redefinition of citizenship, especially pertaining to African Americans.  During this time, the 13th, 14th, and 15th Amendments were passed, which ended slavery, guaranteed African Americans citizenship and equal protection under the laws, and gave African Americans the right to vote, respectively.  Meanwhile, the women’s rights movement was happy to see that voting rights could be expanded, but angry that women were not included.  Reconstruction had some short-term successes as Republicans in Congress worked to alter the balance of power between Congress and the president and to restructure Southern society—mainly in regard to race relations, giving political and other leadership opportunities to former slaves.  However, these results were short-lived:  Southern plantation owners still controlled the majority of the South’s land after Reconstruction, and former slaves often fell short of self-sufficiency because of exploitative systems such as the sharecropping system, which limited blacks’ and poor whites’ access to land in the South.  Also, segregation, violence, decisions by the Supreme Court, and local political strategies slowly stripped African Americans of many of their new rights.  However, in the 1900s, the 14th and 15th Amendments eventually became the foundation for court decisions that protected civil rights.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U5PicKnowNothingParty.JPG" class="image">
+                <p class="caption">This is a flag of the American Party.  The American Party, also known as the “Know-Nothing Party,” was formed in 1854 as the result of the growth of anti-immigrant, anti-Catholic sentiment over several decades.  This nativist movement wanted tighter immigration limits and laws that would restrict Catholics’ power.  The party won several positions in state governments, but perhaps its most significant impact was its contribution to the destruction of the Second Party System that had been around for decades.  In the North, the movement took relatively equal numbers of Whigs and Democrats, but it severely undermined the Whigs in the South. (Key Concept 5.1IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U5PicCompromiseOf1850.JPG" class="image">
+                <p class="caption">In 1849, California decided to apply for statehood as a free state.  While this would restore balance between the number of free states and slave states, Southerners feared that many territories would follow California in applying for statehood as free states, creating a tense situation that was somewhat resolved by the Compromise of 1850.  Under the compromise, California was admitted as a free state, the slave trade was abolished in Washington DC (but not slavery itself), areas acquired by the Mexican Cession would address the issue of slavery through popular sovereignty, Utah and New Mexico were organized under territorial governments, border disputes between Texas and New Mexico were resolved, and the Fugitive Slave Act was enacted.  While many were happy about the compromise, many in both the North and South were not.  The South felt that the compromise did not do enough to protect slavery, especially as some people in the North ignored the Fugitive Slave Act and did not help with catching and turning in slaves; the North was angry that the compromise essentially overturned the Compromise of 1820 (which banned slavery in states above the 36th parallel) by allowing territories to vote on the issue instead, and many were enraged that they were being required by law to help capture slaves.  Additionally, African Americans became increasingly nervous about staying in the US, and some moved to Canada to avoid being sold into slavery, whether they were born a slave or free.The South felt that the compromise did not do enough to protect slavery, especially as some people in the North ignored the Fugitive Slave Act and did not help with catching and turning in slaves; the North was angry that the compromise essentially overturned the Compromise of 1820 (which banned slavery in states above the 36th parallel) by allowing territories to vote on the issue instead, and many were enraged that they were being required by law to help capture slaves.  Additionally, African Americans became increasingly nervous about staying in the US, and some moved to Canada to avoid being sold into slavery, whether they had been born a slave or free.  (Key Concept 5.2IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U5PicBleedingKansas.JPG" class="image">
+                <p class="caption">“Bleeding Kansas,” shown above, was a result of the Kansas-Nebraska Act (1854), which created the Kansas and Nebraska territories but let the residents of those territories vote on whether or note slavery would be allowed.  This concept of letting the region’s people vote on slavery was known as popular sovereignty.  As a result of this, many abolitionists from the North and pro-slavery people from the South streamed into the territories, each setting up their own form of government.  Border ruffians from Missouri disrupted early elections in the Kansas Territory through cheating, fraudulent voting, and intimidation of opponents of slavery.  In response, some antislavery activists—such as John Brown—retaliated violently.  However, “Bleeding Kansas” also had very important political implications.  The Northern and Southern Democrats became heavily split over the issue of popular sovereignty:  Southern Democrats wanted slavery to be legal without any vote needed, while the Northerners did not.  The Whig Party also faced internal divisions over the issue, which all but destroyed the party—especially as many abolitionists, freesoilers, and other antislavery people left to form their own party, the Republican Party. (Key Concept 5.2IIC)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U5PicHarper'sFerry.JPG" class="image">
+                <p class="caption">In October 1859, John Brown and his supporters raided Harper's Ferry, a federal arsenal in Virginia, hoping that slaves could then come, receive ammunition, and start a revolt.  However, this plan ultimately failed:  no slaves came, and the raiders were quickly attacked by townspeople and military troops.  Despite the failure of the raid, this event frightened and enraged the South even more.  This was especially true when John Brown, who had been captured, won the support of many Northerners with his abolitionist messages from prison.  (Key Concept 5.2IB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U5PicEmancipationProclamation.JPG" class="image">
+                <p class="caption">While the Emancipation Proclamation did not actually free any slaves when it was issued, it had some profound effects on the Civil War.  When it was issued, Northerners were angry for various reasons:  some thought that adding the goal of freeing slaves would extend the war, and others didn’t want blacks to be free because they feared it would increase job competition.  As a result, anti-war sentiment grew in the North, evidenced by the rise in power of Democrats who might have ended the war in favor of the Confederacy.  However, the Proclamation also gained some support for the Civil War, especially from African Americans and abolitionists.  It also reflected the growing feeling in much of the North that blacks should be free from slavery.  Furthermore, some areas—such as southern Louisiana and Tennessee, which were already controlled by the Union—voted to rejoin the Union so that the effects of the Proclamation would not apply to them.  The Emancipation Proclamation also had important military impacts.  It encouraged more African Americans to join the Union army, as it officially made it legal for them to join and made the war focused on abolishing slavery, and it forced the South to divert troops due to slaves trying to run away.  These results of the Proclamation played a substantial role on the war, as many of them helped the Union win the war. (Key Concept 5.3IB)</p>
+            </div>
+
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">The background picture shows the attack on Fort Sumter in April 1861, which was important for two reasons.  Firstly, the attack started the Civil War.  After Lincoln won the Presidential Election of 1860 despite receiving no votes from the South, many Southern states chose to secede.  Fort Sumter, a Union-controlled fort in the heart of the seceded South, was perceived as a symbol by those of the South of lasting Union control.  When the Confederacy's demands for the Union to hand over the fort failed, they attacked the fort.  Secondly, it represented Lincoln's strategy in the events leading up to the war.  Lincoln planned for the North to not be the aggressor, wanting any first shots to be from the Confederacy instead.  In a recent shipment of supplies, he had chosen to send only food and medicine, not ammunition, so that it would be clear that the South and not the North had instigated the war.  Through this decision, Lincoln helped guarantee public support from the Union if the North and the South went to war (which they did).  (Key Concept 5.2IID)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://www.connexus.com/extra/ThirdPartyProviders/Pearson/AP_US_History/byThePeople_2e_HTML/page_393.html</li><!--Fort Sumter-->
+            <li>Wikimedia Commons</li><!--Know-Nothing Party-->
+            <li>https://www.archives.gov/exhibits/treasures_of_congress/Images/page_11/36b.html</li><!--Compromise of 1850-->
+            <li>https://www.nps.gov/fosc/learn/historyculture/bleeding.htm</li><!--Bleeding Kansas-->
+            <li>Connexus APUSHIST Course U9L2 Outbreak of Conflict, slide 5</li><!--Harper's Ferry-->
+            <li>https://cdn.britannica.com/74/150374-050-E50DA99E/Emancipation-Proclamation-1863.jpg</li><!--Emancipation Proclamation-->
+        </ul>
+    </div>
+</body>
+</html>
