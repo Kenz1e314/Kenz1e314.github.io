@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U1Background2.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+
+            /*height: 100vh;
+            width: 100vw;*/
+        }
+        .header{
+            background-color: rgb(48, 53, 109);
+            /*background-color:rgb(61, 68, 139);*/
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            opacity: 0.9;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);   */ 
+            /*grid-column-start: 6;
+            grid-column-end: 7;*/
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109);
+            /*background-color:rgb(61, 68, 139);*/
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>The Native Americans and the Start of Colonization</b></p>
+        <p align="center" style="font-size: 20px;">Unit 1:  1491-1600</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-5</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 1.1:  Native Americans had a wide variety of political, economic, and social structures influenced by interactions with the environment and each other before Europeans arrived.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>1.1I The development of Native American socities:</b>  As Native Americans migrated and settled across North America, they developed unique and increasingly complex societies by adapting to and modifying their different environments.  In the Southwest and beyond, the spread of the cultivation of maize (corn) from modern-day Mexico helped with the development of economies and societies.  In the Northwest and areas of present-day California, foraging and hunting had similar effects.  Societies in the western Great Plains and Great Basin developed nomadic lifestyles in response to the lack of natural resources in these areas.  In the Northeast and along the Atlantic, some societies developed an economy dependent on a mix of agriculture and hunting and gathering, which was favorable for creating permanent villages.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 1.2:  The Columbian Exchange, a series of interactions and changes among societies on both sides of the Atlantic, was the result of European exploration and expansion overseas.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>1.2I Impact of European arrival on the Americas:</b>  When Europeans arrived in the Western Hemisphere in the 1400s and 1500s, both the “Old World” and the “New World” experienced significant demographic and social changes.  Spanish and Portuguese were among the first to explore and conquer the Americas.  Their actions led to widespread, fatal epidemics; the creation of racially mixed populations; and the rise of a caste system consisting of a mix of Spanish settlers, Africans, Native Americans, and those of mixed heritage.  The Spanish and Portuguese also traded with West Africa, partnering with some groups to exploit resources and obtain slaves that they would send to the Americas.  The Spanish also impacted the social, economic, and political development of the Americas and the settlement patterns of Native Americans by introducing new crops and livestock to the Western Hemisphere.  The Spanish established colonies with economies based on the Indian labor used in the encomienda system to foster plantation-based agriculture and obtain valuable metals and other resources.  However, this system was gradually replaced with African slavery.</li>
+                    <li><b>1.2II Impact of Europe's discovery of the Americas on Europe:</b>  Europe’s exploration of and expansion into the Americas resulted in extreme social, religious, political, and economic competition in Europe, as well as increased desires of European rulers to build empires.  European exploration and conquest were driven by Gold (desire to find wealth), God (wanting more converts to a specific branch of Christianity), and Glory (desire for higher status), all of which contributed to the power of European nations.  Additionally, new crops from the Western Hemisphere encouraged the growth of the European population, while new sources of wealth from minerals encouraged the shift from feudalism to capitalism in Europe.  European and American economies were also changed by improvements in technology and the creation of more organized methods for international trade.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 1.3:  Interactions between Native Americans, Africans, and Europeans challenged each group’s views and beliefs about the world.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>1.3I European views of Africans and Native Americans:</b>  European exploration overseas and sustained interactions with Native Americans and Africans changed European views of social, political, and economic relationships among and between whites and nonwhites.  The Spanish and Portuguese, having little experience with people different from themselves, poorly understood the Native Americans, causing debates about how “civilized” Native Americans were in comparison to European standards and how they should be treated.  To justify their subjugation of Africans and indigenous people, many Europeans developed a belief of white superiority and used several different defenses.</li>
+                    <li><b>1.3II Native Americans’ and Africans’ efforts to preserve their societies:</b>  As Europeans challenged their independence and core beliefs, Native Americans and Africans worked to keep their political and cultural economies.  Native Americans resisted and conflicted with Europeans as Europeans attempted to change their beliefs about religion, gender roles, family, and people’s relationship with the natural environment.  In spite of being enslaved, Africans had varying degrees of success at preserving their culture and economy through their cultural and linguistic adaptations to the Western Hemisphere.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U1PicGold.JPG" class="image">
+                <p class="caption">Many of the Spanish explorers who came to the Americas were looking for gold, including Ponce de León, who arrived in present-day Florida in 1513, and Álvar Núñez Cabeza de Vaca, who searched in the modern-day US Southwest.  However, both of these explorers—as well as many others—never found gold.  (Key Concept 1.2IIA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U1Pic95Theses.JPG" class="image">
+                <p class="caption">On October 31st, 1517, Martin Luther nailed the 95 Theses on the door of a church, enumerating his complaints against the Catholic Church.  This started a split in the church that resulted in the creation of the Protestants.  The split played a large role in European politics for centuries, and it also played a role in Europeans’ interactions with Native Americans in the Americas.  Religion represented alliances and power, driving many Europeans to attempt to convert the indigenous people to their denomination of Christianity. (Key Concept 1.2IIA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U1PicPotato.JPG" class="image">
+                <p class="caption">Part of the Columbian Exchange was the exchange of crops between Europe and the Americas.  One of the most important crops that Europe received through this exchange was the potato, as it was calorie-dense and could grow in soils in which “Old World” crops couldn’t thrive.  These crops led to population booms in several areas.  However, some societies also became so heavily dependent on these crops that they severely suffered when those crops didn’t thrive (for instance, this occurred with the Irish in the Irish Potato Famine in the 1800s). (Key Concept 1.2IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U1PicSmallpox.JPG" class="image">
+                <p class="caption">When Europeans arrived in the Americas, they also brought diseases such as smallpox (pictured above), mumps, measles, typhus, and chickenpox with them.  Since these illnesses were new to Native Americans, they had no immunity to them.  As a result, many Native Americans died—estimates range from 50% of their population to 90%—and those who weren’t killed by the disease suffered because of the death of important leaders (for instance, the Incas lost their leader, Huayna Capac, to smallpox) and the starvation that resulted from few people being available to grow crops.  This also contributed to the Spanish, needing workers for plantations and mining, turning to African slaves for labor. (Key Concept 1.2IA)</p>
+            </div>
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">The background picture is a photo of a cliff dwelling built by the Anasazis, an ancient Native American tribe that created a complex society by adapting to and changing its environment.  Cliff dwellings were used by many Native American tribes in the Southwest for protection from hostile tribes and the weather.  The Anasazi also built irrigation canals, dams, and terraces to farm crops, including maize (which had spread from present-day Mexico and was a very important crop), beans, and squash.  (Key Concept 1.1IA)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://www.connexus.com/extra/ThirdPartyProviders/Pearson/AP_US_History/byThePeople_2e_HTML/page_7.html</li><!--Anasazi-->
+            <li>Wikimedia Commons</li><!--Gold-->
+            <li>Wikimedia Commons</li><!--95 Theses-->
+            <li>Wikimedia Commons</li><!--Potatoes-->
+            <li>https://www.youtube.com/watch?v=HQPA5oNpfM4</li><!--Smallpox-->
+        </ul>
+    </div>
+</body>
+</html>
