@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /*Washington Crossing the Delaware--https://www.metmuseum.org/art/collection/search/11417*/
+            background-image: url('U3Background2.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+
+            /*height: 100vh;
+            width: 100vw;*/
+        }
+        .header{
+            background-color: rgb(48, 53, 109);
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            opacity: 0.9;
+            min-width: 200px;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);    
+            /*grid-column-start: 6;
+            grid-column-end: 7;*/
+            box-shadow: 2px 2px 5px #000000;
+            /*margin-left: auto;
+            margin-right: auto;*/
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            min-width: 100px;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109);
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>The Beginnings of a Nation</b></p>
+        <p align="center" style="font-size: 20px;">Unit 3:  1754-1800</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-5</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 3.1:   Britain’s victory over France in the French and Indian War also secured Britain’s victory over France in the imperial struggle for North America, but it led to new conflicts among British government, North American colonists, and Native Americans.  This ultimately resulted in the creation of the United States.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>3.1I Native Americans' alliances:</b>  Native American tribes had shifting alliances with Europeans, other tribes, and the new US government throughout the second half of the 1700s.  Many shifted alliances with European powers as a result of English population growth and expansion further inland, which also disrupted fur trade networks.  After the British defeated the French, conflicts between whites and Native Americans continued as the indigenous people wanted to both continue trading with Europeans and resist the encroachment of the British colonists on their traditional lands.  During and after the American Revolution, many tribes tried to create political alliances with one another and with European powers to protect their interests, limit the migration of white settlers, and keep their lands.</li>
+                    <li><b>3.1II The American Revolution:</b>  During and after imperial struggles in the mid-1700s, new pressures began to unite the British colonists against perceived and real restrictions on their economic activities and political rights, resulting in an independence movement and war.  After the French and Indian War, Britain’s debt led to revived efforts to strengthen imperial control over North American markets, taxes, and political institutions.  These actions were supported by some colonists but resisted by others.  The resulting independence movement was driven by established colonial elites and grassroots movements that included newly mobilized laborers, artisans, and women.  To defend their cause, they used arguments over the rights of British subjects, the rights of individuals, and Enlightenment ideas.  Although Britain had apparently overwhelming military and financial advantages as well as loyalist support, the patriot cause won because of the colonists’ greater familiarity with the land, their resilient military and political leadership, their commitment to their ideology, and their support from European allies.</li>
+                    <li><b>3.1III US domestic and international issues:</b>  Because of domestic and international issues, the US debated and created foreign policy initiatives and asserted international presence.  As European powers still had a presence in North America, the US had to find ways to safeguard its borders, keep neutral trading rights, and promote its economic interests.  Additionally, the French Revolution’s spread helped fuel Americans’ debate about the nature of the US’ domestic order and its role in the world.  Washington’s Farewell Address warned about the dangers of divisive political parties and permanent foreign alliances, but European conflict and tensions with Britain and France encouraged increasingly bitter partisan debates in the 1790s.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 3.2:  In the late 1700s, traditional imperial systems across the Atlantic World were challenged by new religious, economic, and cultural ideas, as well as by new experiments with democratic ideas and republican forms of government.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>3.2I Religious and governmental changes:</b>  During the 1700s, new ideas about politics and society led to disputes about religion and government, which encouraged experiments with new governmental structures.  Protestant evangelical religious fervor (especially after the First Great Awakening) strengthened many colonists’ belief that they were a chosen people blessed with liberty.  Enlightenment ideas inspired many American political thinkers to emphasize individual talent over hereditary privilege for obtaining opportunities.  Thomas Paine’s <i>Common Sense</i> and the Declaration of Independence represented the colonists’ belief in republican self-government based on the natural rights of people.  Also, many new state constitutions and the Articles of Confederation, reflecting republican fears of centralized power and excessive popular influence, put power in the hands of the legislative branch and kept property qualifications for citizenship and voting.</li>
+                    <li><b>3.2II Early US government:</b>  After facing problems with the Articles of Confederation (including difficulties with trade, finances, and domestic and foreign relations, as well as internal unrest), US leaders wrote a new Constitution based on the principles of federalism and separation of powers.  The delegates from the states that wrote it formed a series of compromises that resulted in a new national government that still had limits on its power.  The Bill of Rights was also created as a result of calls during the Constitution’s ratification for greater guarantees of rights.  Yet, debates over how to balance liberty and order persisted.  As the first national administration began governing under the Constitution, persisting debates about issues such as the relationship between the federal government and the states, economic policy, and involvement in foreign affairs led to the creation of political parties.</li>
+                    <li><b>3.2III Widespread changes and long-term issues:</b>  Although new governments continued to give rights only to certain groups, ideas of self-government and personal liberty echoed throughout the world.  During and after the American Revolution, some individuals and groups called for the abolition of slavery and greater political democracy in state and federal governments as a result of increased awareness of societal inequalities.  However, the writers of the Constitution didn’t resolve all issues pertaining to slavery and the slave trade, causing recurring debates over these topics for years to come.  Also, the American Revolution and the ideas in the Declaration of Independence inspired future rebellions in places such as France, Haiti, and Latin America.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 3.3:  As a result of migration within North America, cooperative interactions, and competition over resources, people debated over boundaries and policies, experienced intensified conflicts with groups and countries, and contested the creation of a multiethnic, multiracial national identity.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>3.3I Migration causing interactions:</b>  Different groups’ interactions as migrants moved west from the British Atlantic colonies and later the US led to competition for resources, shifting alliances, and cultural blending.  New conflicts between whites and conflicts emerged along the British colonies’ frontiers as the French withdrew from North America and the Native American tried to reassert power over the interior of the continents, and later along the US frontiers as settlers looked to assert more power in the interior lands.  Also, internal and international migration to the West created distinctive backcountry cultures and drove social and ethnic tensions.  Meanwhile, the Spanish, supported by the forced labor of local Native Americans, expanded their mission settlements into California, which gave opportunities for social mobility for enterprising soldiers and settlers, leading to cultural blending.</li>
+                    <li><b>3.3II US migration policies:</b>  US policies that encouraged westward migration and the systematic incorporation of new territories expanded republican institutions and intensified conflicts with Native Americans and Europeans in the western areas of the US.  In the 1780s, as settlers moved west, Congress enacted the Northwest Ordinance, which helped admit new states and strove to promote public education, the protection of private property, and the restriction of slavery in the Northwest Territory.  However, because the Constitution didn’t precisely define the relationship between Native Americans and the federal government, there were problems with treaties and Native American legal claims regarding the seizure of their lands.  The US also had to find diplomatic solutions to manage conflict with Spain as western settlers wanted free navigation of the Mississippi River and had to deal with the continued British presence in North America.</li>
+                    <li><b>3.3III Regional and national identities:</b>  Tendencies towards regional identities were challenged by new calls for a national identity, which contributed to the creation of distinctly American cultural expressions.  The creation of political parties was encouraged by regional divisions over economic, political, social, and foreign policy issues.  Also, the expansion of slavery in the lower South and nearby western lands, and its disappearance in other places, started forming distinctive regional attitudes towards slavery.  Meanwhile, women gained more importance in American political culture through “republican motherhood,” an idea promoted by Enlightenment ideas and women’s experiences in the movement for independence that called for white women to keep and teach republican values within the family.</li>
+                </ul>
+            </div>
+        </div>
+        
+    <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U3PicJoinOrDie.JPG" class="image">
+                <p class="caption">Though it was most famously used for a later situation, Benjamin Franklin's "Join, or Die" political cartoon was first published in 1754.  Franklin, a member of the elite and an Enlightenment thinker, was comparing the very divided 13 colonies to a cut up snake, and he was referring to an American myth that a chopped-up snake could be brought back to life if all the pieces were gathered by sundown.  It initially was used to emphasize that the colonies had to unite to succeed in the French and Indian War, but later it was used to urge for the colonies' unity in the struggle for American independence. Both times it was used, it higlighted the importance of the colonies working as one force towards a common goal, a factor that helped create the American identity.  (Key Concept 3.1IIB)</p>
+            
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U3PicPontiac'sRebellion.JPG" class="image">
+                <p class="caption">From 1763 to 1766, the British had to face the Pontiac Rebellion, a Native American uprising led by Pontiac of the Ottawas and Neolin of the Delawares.  About 14 tribes participated in the rebellion, hoping to regain the power they had lost with the arrival of the Europeans, especially as they felt that the British gaining control of lands east of the Mississippi River would result in losing even more power.  Although Pontiac and his forces lost, it made the British nervous about colonists’ settlement west of the Appalachians, as they feared that it would bring more conflict and more debt.  As a result, the British government issued the Proclamation of 1763, which said that no colonist could settle west of the Appalachians and that those who already had had to move back east of the line. This angered many colonists.  (Key Concept 3.1IB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U3PicTeaAct.JPG" class="image">
+                <p class="caption">In 1773, British parliament passed the Tea Act.  Although the Tea Act actually lowered the price of tea, it angered the colonists because they believed in general that the British shouldn’t be able to tax tea (the last tax standing from the Townshend Duties) and that it hurt smugglers and tea merchants through a British monopoly on tea.  As a result, in December 1773, some Patriots dumped millions of dollars worth of tea into the Boston Harbor.  The following policies and actions by both the British government and the Patriots led to the American Revolution in 1775. (Key Concept 3.1IIA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U3PicEconomicPlans.JPG" class="image">
+                <p class="caption">This is a picture of Hamilton’s <i>Report Relative to a Provision for the Support of Public Credit</i>, one of his many reports as Secretary of Treasury that helped shape the US’ economic structure.  During Washington’s administration as president, the US had to face the economic issues that had been accumulating since the start of the nation.  As a result, Secretary of the Treasury Hamilton proposed a five-point plan:  establish the nation’s credit worthiness (i.e. absorb state debts and pay them); create a national debt (i.e. create new interest-bearing bonds so that the rich could give the US money and have a stake in the nation’s success); create a Bank of the US, which would be private and give a profit to shareholders while holding public funds and issuing notes that would circulate as currency; create a whiskey tax; and encourage domestic industrial manufacturing through a tariff.  While the Federalists liked this plan, Democratic-Republicans did not, feeling that it gave the federal government more power than given in the Constitution and that it would unfairly benefit some people more than others.  However, eventually a compromise was reached, and the first four points of the five-point plan were enacted in exchange for making the permanent location of the US capitol be along the Potomac River.  (Key Concept 3.2IID)</p>
+            </div>
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">The background picture shows Washington Crossing the Delaware River on December 25, 1776, to launch a surprise attack on Hessian forces in the Battle of Trenton (a battle in the American Revolution).  This battle was an important blow against the British and gave a much-needed morale boost to the Continental Army.  It also reflected that the Continental Army, under the resilient leadership of Washington, had a chance of winning the war.  (Key Concept 3.1IIC)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://www.metmuseum.org/art/collection/search/11417</li>
+            <li>APUSH Connexus Course:  U10L1 Semester Review:  US History, pre-1492--1800, page 7</li><!--Join or Die-->
+            <li>https://www.youtube.com/watch?v=5vKGU3aEGss</li><!--Pontiac's Rebellion-->
+            <li>https://www.bostonteapartyship.com/the-tea-act</li><!--Tea Act-->
+            <li>https://www.loc.gov/item/mss246120169</li><!--Hamilton's 5-Point Plan-->
+        </ul>
+    </div>
+</body>
+</html>
