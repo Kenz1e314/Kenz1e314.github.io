@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U2Background.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+
+            /*height: 100vh;
+            width: 100vw;*/
+        }
+        .header{
+            background-color: rgb(48, 53, 109); 
+            /*background-color:rgb(61, 68, 139);*/
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            opacity: 0.9;
+            
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109); */   
+            /*grid-column-start: 6;
+            grid-column-end: 7;*/
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109)
+            /*background-color:rgb(61, 68, 139);*/
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>The Colonization of the Americas</b></p>
+        <p align="center" style="font-size: 20px;">Unit 2:  1607-1754</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-5</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 2.1:  In the 1600s, the different goals and attitudes of the Spanish, French, Dutch, and British colonizers, as well as differences in the environments each encountered, resulted in unique colonization models.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>2.1I Colonization models of European countries:</b>  The Spanish, French, Dutch, and British had different goals for colonization, as well as different cultural assumptions and ways of thinking and behaving.  Spain strove to control colonization in the “New World” and convert and/or exploit Native Americans.  The French and Dutch sent relatively few Europeans to colonies in the Americas.  Largely focused on trade, they used trade alliances and intermarriage with Native Americans to obtain furs and other commodities that they could send to Europe.  The English, unlike those from other competing European nations, eventually worked to establish agriculturally-based societies.  To accomplish this goal through gaining land and populating settlements, they sent relatively large numbers of men and women.  However, they also had fairly hostile relationships with Native Americans.</li>
+                    <li><b>2.1II The British and slavery:</b>  The British-American slavery system emerged as a result of economic, demographic, and geographic features of the British colonies.  Because the British colonists rarely intermarried with Native Americans or Africans—unlike the Spanish, French, and Dutch colonists, who permitted intermarriage with the indigenous peoples (and in the Spanish colonists’ case, Africans)—a rigid racial hierarchy developed.  The British colonists’ belief in their own racial and cultural superiority led to violent conflicts with Native Americans.  Additionally, the Transatlantic Slave Trade grew out of the rise of European demand for colonial goods, the abundance of land, a shortage of indentured servants, and the colonists’ inability to effectively enslave Native Americans.  The British justified African enslavement with their beliefs of superiority.  As a result of this system, Africans were enslaved for centuries, and they experienced changes in their gender and kinship relationships with the colonies.  However, Africans worked both surreptitiously and openly to resist the dehumanizing facets of slavery.</li>
+                    <li><b>2.1III The different regions of the British’s Atlantic colonies:</b>  Because of environmental and geographical differences (for instance, the climate and the natural resources available), in addition to other factors, there were regional differences among the British colonies.  The New England colonies were founded mainly by Puritans, who wanted to create a community of similar-minded people—especially in religious beliefs.  As a result, they formed a fairly close-knit, homogenous society, which also had a prosperous and diverse economy involving agriculture and commerce because of favorable environmental conditions.  Meanwhile, the middle colonies, which were very demographically, religiously, and ethnically diverse, had a strong export economy based on grains, and the Chesapeake colonies and North Carolina used indentured servants and African slaves to grow tobacco.  The Southern colonies and the British islands in the Caribbean utilized the long growing seasons by using slave labor to develop staple-crop-based economies.  In some locations of this region, African slaves made up the majority of the population.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 2.2:  Colonization efforts in North America by Europeans led to intercultural contact and increased conflict between the different groups of colonizers and Native Americans.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>2.2I Spread of European Conflicts:</b>  Competition between rival European nations over resources caused conflict within and between North American colonies and Native Americans  As the Spanish, French, Dutch, and British colonies allied, traded with, and armed Native Americans as European conflicts spread to North America, leading to ongoing political instability.  During these European conflicts in North America, the colonies focused on gaining new sources of labor and on producing and obtaining goods that were valued in Europe.  However, sometimes the goals of European leaders didn’t align with those of colonists, leading to growing mistrust in both Europe and the Americas.  Settlers, especially in British colonies, expressed frustration with territorial settlements, frontier defense, and other matters.</li>
+                    <li><b>2.2II Impacts of European and Native American conflicts:</b>  The cultures of both the Europeans and the Native Americans changed as a result of clashes between the two’s social and economic values.  Native American communities experienced cultural and demographic changes because of European contact, as the Europeans increased the flow of trade commodities and diseases into and out of their communities.  While the Spanish colonists began adjusting to Native American culture, especially after the Pueblo Revolt, conflicts with Native Americans tended to reinforce British colonists’ views on gender roles on land.  Also, Europeans helped increase the intensity and destructiveness of Native American warfare by suppling the indigenous people with deadlier weapons and alcohol and by rewarding their military actions.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 2.3:  The increasing political, economic, and cultural exchanges between Europe, the Americas, and Africa—the “Atlantic World”—had a significant impact on the colonial societies’ development in North America.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>The Atlantic culture and economy:</b>  The commercial, political, religious, and philosophical interactions between the people of the “Atlantic World” encouraged economic growth, extended social networks, and shaped labor systems.  As an Atlantic economy grew during the 1700s, it created a shared labor market and a broad exchange of good from Europe and the Americas.  This was exemplified by the African slave trade and the shipment of goods from the Americas.  Meanwhile, the British colonies experienced Anglicization because of the growth of independent political communities based on British models, the growth of commercial ties and legal structures, the emergence of a trans-Atlantic print culture, Protestant evangelism, religious toleration, and the spread of Enlightenment ideas from Europe.  While the Spanish and French accepted the idea of mixed-race societies, the British colonists developed racial stereotypes and strict racial categories as a result of the presence of slavery and the impact of colonial wars encouraging the emergence of ideas about race in the Atlantic system.</li>
+                    <li><b>British imperial control:</b>  Britain strove to keep a strong North American empire, even while facing increasing internal challenges and external competition.  This promoted efforts to strengthen its imperial control, which resulted in mounting resistance from colonists who had become accustomed to having a lot of autonomy.  Regional differences in the British colonies diminished over time, and they developed largely similar cultures, laws, institutions, and governments within the British imperial system.  However, when efforts were made in the late 1600s to integrate British colonies into a hierarchical imperial structure and to pursue mercantilist goals, they had little success because of different forms of colonial resistance and conflicts with Native Americans.  Colonial resistance against imperial control was driven by the colonies’ experiences of self-government, evolving ideas of liberty, political ideas from the Enlightenment, more religious independence and diversity, and the perceived corruption in the imperial system.  For about 50 years afterwards, the British government had a laissez-faire attitudes towards colonial government.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U2PicMetacom'sWar.JPG" class="image">
+                <p class="caption">Metacom’s War, also known as King Philip’s War, was a significant conflict between British settlers and Native Americans (including the Wampanoags, Narragansetts, and other tribes) from 1675 to 1676.  The conflict was the result of deteriorating relations between English settlers and Native Americans, especially as rumors circulated throughout New England settlements that the Wampanoag, led by Metacom, were going to declare war.  It was one of the most vicious wars ever fought in North America and was the largest Native American attack on New England colonists.  In the end, after thousands of deaths, the New England colonists killed Metacom and pushed the surviving Wampanoag and Narragansett out of New England, selling many of them into slavery in the Caribbean.  The war also inspired fear in the southern colonies, which helped cause issues in those colonies as well—for instance, Bacon’s Rebellion. (Key Concept 2.1IC)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U2PicPuebloRevolt.JPG" class="image">
+                <p class="caption">The Spanish’s attempt at imposing its beliefs and systems onto the Native Americans led to the Pueblo Revolt in 1680, the longest and most successful Native American revolt and the greatest defeat of a European colony in the Americas.  Though the Spanish eventually regained control of the area, afterwards they were much more tolerant of indigenous religion and they largely abandoned the forced-labor practice of the encomienda system.  (Key Concept 2.1IA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U2PicGloriousRevolution.JPG" class="image">
+                <p class="caption">In 1689, the English Parliament ousted King James II and “elected” Mary and William (both pictured above), his daughter and son-in-law, to become the new rulers.  This became known as the Glorious Revolution, and it had significant impacts on the English colonists.  The colonists had resented James II because he had tried to take and exert power over the colonies, but the Glorious Revolution restored much of this power to the colonies.  However, traditional power-holders, including the Virginia Company, Massachusetts Company, and proprietors such as Lord Baltimore or William Penn began losing power, and elected colonial assemblies, emboldened by the revolution, increasingly challenged the power of royal governors.  Additionally, justifications for the revolution—including Locke’s assertion that the people had the right to approve or reject government power—were later used by the colonists to justify their own independence movement. (Key Concept 2.3IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U2PicStonoRebellion.JPG" class="image">
+                <p class="caption">One way that African slaves resisted the institution of slavery was through rebellions, such as the Stono Rebellion.  In 1739, a group of about 60 slaves from rice plantations in South Carolina, partly inspired by the Spanish’s promise of freedom for slaves that escaped to Florida, started an armed revolt.  They burned plantations and killed colonists who tried to stop them, and although most were defeated by a South Carolina militia in Stono, South Carolina, some made it to Florida and joined a free African community there.  However, it also led to lasting restrictions on slaves’ rights, including the right of slaves to assemble. (Key Concept 2.1IID)</p>
+            </div>
+
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">In 1607, the Virginia Company founded Jamestown, hoping to make money off of the colony.  It was the first successful British settlement in North America.  Though initially the settlers hoped to make a living by discovering valuable natural resources, they eventually had to turn to farming (and rely on help from Powhatan, a Native American who ruled several local tribes) to survive.  However, colonists soon discovered that they could grow tobacco as a cash crop.  Since this required the colonists to use more land and space, it resulted in tensions with Native Americans.  Tobacco farming also helped shape Virginia’s society:  it created a small class of wealthy landowners and a large class of servants, and it created a largely male society because male servants were more useful in the fields. (Key Concept 2.1IC)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://cdn.britannica.com/80/83680-050-4494A347.jpg</li><!--Jamestown-->
+            <li>https://www.youtube.com/watch?v=TTYOQ05oDOI</li><!--Metacom's War-->
+            <li>https://www.pbs.org/video/finding-your-roots-pueblo-revolt/</li><!--Pueblo Revolt-->
+            <li>https://www.britannica.com/event/Glorious-Revolution</li><!--Glorious Revolution-->
+            <li>https://www.khanacademy.org/humanities/us-history/colonial-america/early-chesapeake-and-southern-colonies/a/slavery-in-english-colonies</li><!--Stono Rebellion-->
+        </ul>
+    </div>
+</body>
+</html>
