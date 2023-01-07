@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U4Background2.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+
+            /*height: 100vh;
+            width: 100vw;*/
+        }
+        .header{
+            background-color: rgb(48, 53, 109); 
+            /*background-color:rgb(61, 68, 139);*/
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            opacity: 0.9;
+            min-width: 200px;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109); */   
+            /*grid-column-start: 6;
+            grid-column-end: 7;*/
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            min-width: 100px;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109)
+            /*background-color:rgb(61, 68, 139);*/
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>The Growth of a Nation</b></p>
+        <p align="center" style="font-size: 20px;">Unit 4:  1800-1848</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-5</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 4.1:  The United States was the first modern mass democracy.  As it celebrated a new national culture, Americans worked to define the US’ democratic ideals and to change its institutions to match them.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>4.1I The role of government:</b>  As the US transformed to a more participatory democracy, debates over federal power, the relationship between state and federal governments, the authority of different federal government branches, and the rights and responsibilities of individual citizens continued.  Various groups with different goals combined, forming political parties such as the Federalists and Democratic-Republicans in the 1790s and the Democrats and Whigs in the 1830s to accomplish these goals.  Also, Supreme Court decisions helped assert federal power over the states and role of the judicial branch in interpreting the Constitution.  Citizens debated how involved the government should be in the economy as the national and international market economy accelerated and grew.  Meanwhile, diverging economic systems meant that regional and economic loyalties continued to be concerning, especially as many whites in the South asserted their regional identity through pride in slavery and declared that the national government should protect the institution.</li>
+                    <li><b>4.1II Reforms and Resistance:</b>  While international exchange of goods and ideas increased, larger numbers of Americans began considering how to match democratic political ideas to social realities and political institutions.  For instance, because of the Second Great Awakening, liberal social ideas from other places, and Romantic beliefs that humans could achieve perfection, voluntary organizations that promoted religious and secular reforms—such as abolition and women’s rights—grew.  Although the international slave trade was outlawed, the number of free African Americans in the North and South rose, and plans for emancipation were becoming widely discussed, the federal and many state governments still restricted African Americans’ citizenship possibilities.  Pro-slavery arguments, increasing xenophobia, anti-black feelings in political and popular culture, and ant-Indian policies opposed initiative for democracy and inclusion.</li>
+                    <li><b>4.1III Sectional Cultures:</b>  While a new, celebrated national culture was being created that blended Old World and New World ideas, several groups developed their own distinctive cultures.  As Americans created art, architecture, and literature that combined local and regional cultural feelings with European forms and contributed to the national culture, groups such as Native Americans, women, religious followers, and African Americans created their own cultures.  Several different groups of Native Americans, women, and religious followers created cultures that reflected their interests and experiences, and regional groups and the growing urban middle class did the same.  Enslaved and free African Americans, stuck at the bottom of the social hierarchy, created communities and strategies to protect their dignity and family structures, as some launched abolitionist and reform movements that worked towards changing their status.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 4.2:  Developments in technology, agriculture, and commerce had significant impacts on US settlement patters, regional identities, gender and family relations, political power, and the distribution of goods.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>4.2I Economic Revolution:</b>  A worldwide market and communications revolution, which was shaped by and influencing technological innovations, caused shifts in the nature of agriculture and manufacturing.  Innovations such as textile machinery, steam engines, interchangeable parts, canals, railroads, the telegraph, and agricultural inventions improved the reach and efficiency of markets.  More Americans, especially women in factories and low-skilled male workers, now worked in producing goods for distant markets as opposed to in semi-subsistence agriculture, even as some urban entrepreneurs worked in finance rather than manufacturing.</li>
+                    <li><b>4.2II Regional Economic Specialization:</b>  Regional economies became specialized, especially in the South because of the demands for its cotton.  This shaped settlement patterns and the national and international economies.  Southern cotton was used by manufacturing (particularly that pertaining to textiles) in the Northeast, and as cotton production and trade grew, it encouraged the development of national economic ties, affected the international economy, and drove the internal slave trade.  Although there were some governmental and private efforts to create a unified national economy—for instance, the American System—the shift to market production connected the North and the Midwest than either was connected to the South.  Also, efforts to take advantage of the US’ natural resources led to government efforts to encourage free and forced migration of several Native American tribes across the continent.  It also led to competing ideas about defining and controlling labor systems, geographical boundaries, and natural resources.</li>
+                    <li><b>4.2III Economic Impacts on People:</b>  The market revolution’s economic changes significantly impacted migration patterns, gender and family relations, and the allocation of political power.  As canals and new roads going west opened, native-born whites moved west, relying on new community systems to replace their old family and local relationships.  Meanwhile, immigrants from Europe populated the East and the Midwest, creating many bonds of interdependence between the Northeast and the Midwest.  However, the South remained politically, ideologically, and culturally distinct from the other regions, and its economic growth continued to rely on exports to Europe.  Regional interests continued to dominate over national concerns in the minds of many politicians, which shaped their views on economic issues such as slavery, the national bank, tariffs, and internal improvements.  The market revolution also helped widen the wealth gap between the rich and the poor, shaped emerging working and middle classes, and caused a growing separation between home and the workplace, which created significant transformations in gender and family roles/expectations.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 4.3: The US’ interest in expanding foreign trade and its national borders while isolating itself from European conflicts shaped the country’s foreign policy and prompted government and private projects.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>4.3I Reasons and methods for expansion:</b>  As the US struggled to form an independent global presence, the country’s policymakers wanted to dominate North America and to promote its foreign trade.  After the Louisiana Purchase, Americans’ drive to obtain, survey, and open new lands and markets led them into many economic, diplomatic, and military plans.  The US strove to dominate North America through military actions, judicial decisions, and diplomatic efforts.</li>
+                    <li><b>4.3II Resistance to and advocacy for expansions:</b>  Various groups and individuals in America started, advocated for, and/or resisted the expansion of territory and/or government powers.  As the US grew, so did public debates about whether to expand and how to define and utilize the new territories.  While whites along the frontier tended to advocate for expansion efforts, resistance from Native Americans led to a series of wars and federal efforts to control Native Americans.  The federal government also attempted to assert authority over the states, which led to resistance from state governments at different times from the North and South.</li>
+                    <li><b>4.3III Expansion and slavery debates:</b>  With the US’ acquisition of western lands came rising debates over the expansion of slavery into western territories, as well as a sequence of attempts to reach a national compromise.  One example of compromise, the 1820 Missouri Compromise, created a temporary truce over the issue of slavery, but it slowly broke down as each side grew more bitter.  Meanwhile, as overcultivation depleted the Southeast’s arable land, slaveholders relocated to the Southwest, increasing sectional tensions over slavery and igniting a large debate about how to set national goals, priorities, and strategies.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U4PicCourtCase.JPG" class="image">
+                <p class="caption">While Jefferson wanted to limit the power of the federal government, in some ways he saw it expand during his presidency.  For instance, the Supreme Court’s decision in <i>Marbury v. Madison</i> established judicial review, or the Court’s power to declare laws unconstitutional.  At the end of his presidency, John Adams, the previous president, had appointed “midnight judges,” so named because of how late into the presidency they were appointed.  However, in the new administration, Madison, the Secretary of State, refused to deliver Marbury’s commission, and Marbury sued.  Though Chief Justice Marshall said that Jefferson was irresponsible, he declared that the Court wouldn’t act because the Judiciary Act of 1789, which gave federal courts the right to issue writs requiring government action, was unconstitutional.  This was the first time that the Supreme Court asserted that it could review and determine the constitutionality of laws passed by federal and state legislatures. (Key Concept 4.1IB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U4PicMonroeDoctrine.JPG" class="image">
+                <p class="caption">The Monroe Doctrine was an important piece of US foreign policy.  The United States wanted to keep European nations out of the Americas, feeling that they were a threat to the nation—for instance, by threatening to or actually taking US ships and sailors—as well as its ability to expand.  However, the US also wanted to stay out of European conflicts.  The Monroe Doctrine reflected both of these:  Monroe declared in December 1823 that there would be no further European colonization of the Western Hemisphere, that the US would not allow Europeans to interfere with the internal affairs of independent nations in the Americas, and that the US would stay out of European conflicts.  The policy showed what role the US wanted to play on the international stage. (Key Concept 4.3IA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U4PicAmericanSystem.JPG" class="image">
+                <p class="caption">The image above is part of a transcript of Henry Clay's speech to the Senate about the American System in 1832.  Through the American System, Clay wanted to unite the nation economically through the development of infrastructure, including roads and canals; tariffs that would protect new factories and industries; and a national bank.  While some supported this plan, glad that it would protect industry, others—especially people in the South—opposed the tariff in the plan, as it raised the costs of important materials.  These divisions over what economic path the nation should take led to the formation of the Second Party System, which consisted of the Democratic Party and the Whig Party. (Key Concept 4.2IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U4PicNullificationCrisis.JPG" class="image">
+                <p class="caption">This is a political cartoon about the Nullification Crisis.  The Nullification Crisis, the greatest threat to the Constitution yet, started with the Tariff of 1828.  Many in the South opposed tariffs, as they benefitted the industrial North while raising prices on the exports that the South needed for farming.  Many also feared that foreign nations would retaliate by imposing their own tariffs on raw materials (which the South produced).  For these reasons, South Carolina nullified this tariff, even calling it the "Tariff of Abominations."  Though Jackson, the current president, also opposed tariffs, he opposed the idea of states ignoring federal laws even more.  While South Carolina claimed that it had a constitutional right to nullify any federal law it wanted, Jackson disagreed.  Efforts were made to create a new tariff, but while most of the South was fine with the compromise, South Carolina still nullified the tariffs.  Tensions mounted as South Carolina raised a militia and some of its politicians talked of secession.  The standoff ended in 1833 when Congress passed another compromise tariff and gave Jackson the authority to put down the rebellion through the "Force Bill."  South Carolina decided to back down, but the event foreshadowed future conflict.  It pointed out the differences between the North and the South, and it had been one of the more severe threats of secession before the Civil War.  Also, though Jackson had asserted that the federal government had power over the states, many radicals still prioritized loyalty to state government above federal government.  (Key Concept 4.3IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U4PicMexicanAmericanWar.JPG" class="image">
+                <p class="caption">The Mexican-American War was a result of the US’ desire for expansion and resulted in more debates over slavery.  The war started in 1846 when US and Mexican troops clashed along the disputed border of the two countries (and the US troops were there partially because President Polk was hoping for a conflict through which to obtain land), and within two years the US had won the war and the Treaty of Guadalupe-Hidalgo ended the war in 1848.  Because of the war, the United States officially gained Texas and also gained the California and New Mexico territories.  However, this quickly led to debates over whether or not slavery should be allowed in the new territories. (Key Concept 4.3IB)</p>
+            </div>
+
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">This painting, <i>American Progress</i>, was originally painted in 1872 by John Gast.  However, it embodies the expansionism ideas seen in the United States from 1800-1848, as it embodies the idea of Manifest Destiny (a term that though coined in 1845 expressed ideas that had been present long before).  The angel represents how Americans felt that their expansion across the continent was inevitable and ordained by God to spread Jacksonian democracy and Protestant Christianity.  Economic goals (hoping to make a profit farming on land that was generally cheaper than on the East Coast) and political ideals (such as the Democratic-Republican values of individualism and minimal government intervention) also drove western settlement.  The picture also expresses the development and spread of technology, such as railroads. (Key Concept 4.3IA)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://en.wikipedia.org/wiki/American_Progress</li><!--American Progress-->
+            <li>https://tile.loc.gov/storage-services/service/ll/usrep/usrep005/usrep005137/usrep005137.pdf</li><!--Marbury v. Madison-->
+            <li>https://www.history.com/topics/westward-expansion/monroe-doctrine</li><!--Monroe Doctrine-->
+            <li>https://www.senate.gov/artandhistory/history/resources/pdf/AmericanSystem.pdf</li><!--American System-->
+            <li>https://www.battlefields.org/learn/articles/nullification-crisis</li><!--Nullification Crisis-->
+            <li>https://www.youtube.com/watch?v=tkdF8pOFUfI&t=244s</li><!--Mexican-American War-->
+        </ul>
+    </div>
+</body>
+</html>
