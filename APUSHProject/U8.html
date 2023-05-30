@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 8</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U8PicMontgomeryBusBoycott2.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+        }
+        .header{
+            background-color: rgb(48, 53, 109);
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            opacity: 0.9;
+            min-width: 200px;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            min-width: 100px;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109);
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>Cold War, Hot Debate</b></p>
+        <p align="center" style="font-size: 20px;">Unit 8:  1945-1980</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-9</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 8.1:  Responding to an uncertain and unstable postwar world, the US asserted and tried to defend a position of international leadership, with impactful domestic and foreign consequences.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>8.1I US Foreign Policy After WWII:  </b>Following WWII, the US attempted to form a stable global economy, create an international security system, and stop the growth of Communist military power and ideological influence.  This all was represented by the US’s foreign policy, aiming to form a collective security and a joint economic framework to support non-Communist nations.  The US also worked to contain communism through measures such as military engagements in Korea and Vietnam.  For decades, the Cold War fluctuated between periods of direct and indirect military confrontation and periods of mutual coexistence (aka détente).</li>
+                    <li><b>8.1II Other Countries, the Cold War, and the US:  </b>US foreign policy issues such as decolonization, shifting international alignments and regional conflicts, and worldwide economic and environmental changes, became increasingly complicated.  As powerful nationalist movements and decolonization sentiment emerged in Africa, Asia, and the Middle East, both sides in the Cold War sought new allies amongst new nations, many of which staying nonaligned.  Soon, Cold War competition spread into Latin America, where the US backed non-Communist regimes that had varying levels of commitment to democracy.  In the Middle East, ideological, economic, and military concerns shaped US involvement, with several oil crises eventually instigating attempts at creating a national energy policy.</li>
+                    <li><b>8.1III Public Debates about the Cold War:  </b>As the Cold War stretched on, the public argued over the federal government’s power, acceptable means for pursuing domestic and international goals, and the proper balance between liberty and order.  Even though both parties tended to support the larger Cold War strategy of containing communism, there were debates over the policies and methods designed to root out Communists in the US.  The Korean War generated mild opposition, but the Vietnam War produced significant, ardent, and sometimes violent antiwar protests that grew as the war escalated.  Americans also debated about the benefits and negatives of a large nuclear arsenal, the military-industrial complex, and the suitable power of the executive branch in administering foreign and military policy.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 8.2:  In the 1960s, liberalism—based on anticommunism abroad and a strong belief in the efficacy of governmental and particularly federal power to achieve domestic social goals—reached its peak and inspired a variety of political and cultural responses.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>8.2I The Civil Rights Movement:  </b>After WWII, civil rights activists used a variety of strategies, including legal challenges, direct action, and nonviolent protests, to try to fulfill Reconstruction-era promises and combat racial discrimination.  These activists and supporting political leaders gained some legal and political successes in ending segregation, with decisionmakers in each of the three branches of federal government utilizing measures such as desegregating the armed services, Brown v. Board of Education, and the Civil Rights Act of 1964 to promote greater racial justice.  However, continuing white resistance slowed desegregation efforts, instigating a series of social and political crises across the US.  Meanwhile, tensions amongst civil rights activists over tactical and philosophical differences increased after 1965.</li>
+                    <li><b>8.2II Other Social Movements:  </b>Because of a growing awareness of inequalities in US society and the inspiration of the African American civil rights movement, activists also addressed issues of identity and social justice.  They questioned society’s assumptions about gender and sexuality and began calling for social and economic equality for women and for gays and lesbians.  In the meantime, Latinos, Native Americans, and Asian Americans also started demanding social and economic equality, in addition to a redress of past injustices.  Advocates also raised awareness for the persistence and prevalence of poverty as a national problem (despite the perception of overall affluence in the postwar US), which led to efforts to address the issue.</li>
+                    <li><b>8.2III The Zenith and Criticism of Liberalism:  </b>Many liberal ideas began dominating postwar politics and court decisions, reaching its height with LBJ’s Great Society efforts to use federal power to end racial discrimination and poverty and address other social issues while attacking communism abroad.  In the Supreme Court, liberalism was reflected through decisions that expanded democracy and individual freedoms.  However, these uses of federal power unintentionally helped empower a resurgent conservative movement that sought to defend traditional values of morality and the proper role of state authority.  Left-leaning groups also attacked liberals, claiming they did too little to change the racial and economic status quo at home and practiced immoral policies abroad.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 8.3:  Postwar technological, economic, and demographic changes had significant impacts on US society, politics, and the environment.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>8.3I Postwar Social and Economic Changes:  </b>While rapid economic and social changes in US society supported a sense of optimism after WWII, they also generated concerns about how these changes were affecting American values.  Continued federal spending, an expanding private sector, the baby boom, and technological developments helped drive economic growth, middle-class suburbanization, rapid growth of higher education, social mobility, and the rise of the Sun Belt as a political and economic force.  These changes, in addition to the fear from the Cold War, led to an increasingly homogenous mass culture, as well as challenges to conformity by intellectuals, artists, and rebellious youth.  This caused conservatives, who feared juvenile delinquency, urban unrest, and challenges to the traditional family, to increasingly promote their own values and philosophy.</li>
+                    <li><b>8.3II Responses to Growth:  </b>Federal programs grew and economic growth reshaped US society, causing many to seek greater access to prosperity and generating concern about the increasing use of natural resources.  The economic boom and other benefits of the US encouraged internal and international migrations, especially after new immigration laws were passed in 1965.  However, some activists and legislators responded to this growth (and its corresponding abuse of natural resources and concerning environmental problems) by calling for conservation measures and fighting against pollution.</li>
+                    <li><b>8.3III The Culture Wars:  </b>New demographic and social issues resulted in large, divisive political and moral debates.  Even though the image of the traditional nuclear family dominated in the postwar public, as the number of working women increased and many social attitudes changed, this structure underwent impactful changes.  Additionally, many young people participated in the counterculture of the 1960s, rejecting many of the social, economic, and political beliefs of their parents’ generation, starting a sexual revolution, and introducing greater informality into American culture.  Liberals and conservatives clashed over several new social issues, movements for greater individual rights, and the power of the president and the federal government.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U8PicGIBill.JPG" class="image">
+                <p class="caption">This picture represents efforts to help WWII veterans as they returned to the United States.  After WWII, many wanted to make sure that the returning 15 million soldiers could reassimilate into civilian life and find success.  To aid soldiers in their attempts to do this, Congress passed the Servicemen’s Readjustment Act of 1944, also known as the GI Bill.  This bill helped returning soldiers significantly after the war ended in 1945, giving them benefits such as low-interest home mortgages, funding for college tuition, and unemployment benefits.  As a result, many WWII veterans were able to buy homes in the rapidly growing suburbs and experienced relative economic security.  This in turn gave many of them relatively safe and comfortable lifestyles good for having children, generating a “baby boom.”  As many returning soldiers bought homes in the suburbs, purchased cars, and started families, an era of conformity emerged.  Additionally, the bill changed US education, supporting more science, business, and engineering programs in universities and also allowing more people to obtain higher education.  However, many women and African Americans who had served in the armed forces were unable to receive the GI Bill’s benefits, and the white males who benefitted the most from the bill got first priority in hiring, taking the jobs that women and African Americans had filled during WWII. (Key Concept 8.3IA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U8PicSilentSpring.JPG" class="image">
+                <p class="caption">In 1962, Rachel Carson published <i>Silent Spring</i>, a book about the dangers of pesticides, especially DDT.  At the time, the use of pesticides was popular, but scientists were beginning to discover the adverse effects they had on the environment—for instance, how DDT weakened eagle’s eggshells and thus harmed the eagle population.  Silent Spring helped inspire the ban of DDT, and it also helped contribute to the rise of the modern environmentalist movement. (Key Concept 8.3IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U8PicCubanMissileCrisis.JPG" class="image">
+                <p class="caption">The Cuban Missile Crisis was perhaps one of the most tense—and famous—moments from the Cold War.  The US had had a complicated relationship with Cuba, at first getting along with Castro’s regime, but then turning against him after some of his actions.  The year before, JFK had even authorized the Bay of Pigs Invasion, in which US-trained Cuban exiles would attempt to retake Cuba; however, this had failed dramatically.  In October 1962, the US found out that the USSR was sending military supplies to Cuba, including missiles.  As they debated how to address the situation without the nation being hit by Soviet missiles, US officials said that their forces would blockade and destroy any military supply ships going to Cuba, and that any act against the US would incur retaliation.  For 13 days, many feared the event would spark a nuclear war.  However, finally, President Kennedy and Premier Khrushchev reached an agreement that ended the standoff:  the USSR would remove its missiles from Cuba, and in return the US would end the blockade, promise it wouldn’t invade, and remove missiles from Turkey. (Key Concept 8.1IC)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U8PicWarPowersAct.JPG" class="image">
+                <p class="caption">The Vietnam War, one of the “hot” parts of the Cold War, was also an unusual war:  even though the Constitution states that Congress must be the one to declare war, its gradual escalation meant that Congress had never in fact declared war in Vietnam.  As public disapproval of the war grew—especially after the Pentagon Papers were leaked, revealing that the government had been hiding information about the status of the war—Congress decided to pass the War Powers Act in 1973, limiting the president’s military powers.  Even though President Nixon did not agree with this and tried to veto the act, Congress overrode the veto and the act was put into place. (Key Concept 8.1IIIC)</p>
+            </div>
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">This photo of Rosa Parks is from December 1956, the same day the Supreme Court’s ruling banning Montgomery’s segregated transportation went into effect.  The previous year, she had been arrested for refusing to give up her bus seat and thus for violating discriminatory Jim Crow laws.  Her arrest sparked the Montgomery Bus Boycott, which lasted for a little over a year.  This protest did more than just help end the segregation of Montgomery’s transportation segregation; it also helped many civil rights leaders rise into prominence, including Martin Luther King, Jr.  (Key Concept 8.2IA)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://cdn.britannica.com/90/3390-050-D62D761B/Rosa-Parks-bus-Montgomery-Alabama-1956.jpg</li><!--Montgomery Bus Boycott-->
+            <li>https://www.khanacademy.org/humanities/us-history/postwarera/postwar-era/a/african-americans-women-and-the-gi-bill </li><!--GI Bill-->
+            <li>https://www.si.edu/object/silent-spring-rachel-carson-1962%3Anmah_1453548</li><!--Silent Spring-->
+            <li>https://www.smithsonianmag.com/history/learning-from-the-missile-crisis-68901679/</li><!--Cuban Missile Crisis-->
+            <li>https://www.nixonlibrary.gov/news/war-powers-resolution-1973</li><!--War Powers Act-->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 6</title>
+    <script src="collapse.js" defer></script>
+    <style>
+        .caption::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(26, 29, 61);
+            border-radius: 3px;
+        }
+
+        .caption::-webkit-scrollbar-thumb{
+            background-color: rgb(48, 53, 109);
+            opacity: 0.9;
+            border-radius: 3px;
+        }
+        .caption::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(38, 42, 85);
+        }
+
+        body{
+            margin: 0;
+            margin-bottom: 0;
+            padding: 0; 
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('U6PicTCR.JPG');
+            background-size:  cover;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+        }
+        .header{
+            background-color: rgb(48, 53, 109);
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 0px 20px #000000;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        #link{
+            margin: 0;
+            color:white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration:underline;
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr)
+        }
+        .info{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            padding-left: 10px;
+            margin: 10px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px #000000;
+            background-color:rgb(61, 68, 139);
+            opacity: 0.9;
+            min-width: 200px;
+        }
+        .pictures{
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .picFormat{
+            background-color:rgb(61, 68, 139);
+            box-shadow: 2px 2px 5px #000000;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            margin: 7px;
+            width: 50%;
+            min-width: 100px;
+            opacity: 0.9;
+        }
+        .image{
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .caption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        .backgroundCaption{
+            background-color:rgb(61, 68, 139);
+            /*background-color: rgb(48, 53, 109);*/
+            font-size: 15px;
+            padding: 7px;
+            margin: 0px;
+        }
+        .footer{
+            font-size: 10px;
+            padding: 5px;
+            background-color: rgb(48, 53, 109);
+        }
+
+        /**Compressing Key Concepts Signals**/
+        #KC1:hover, #KC2:hover, #KC3:hover{
+            color: rgb(176, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+        <p align="center"><b>New Technologies, Changing Economies, and Many Movements</b></p>
+        <p align="center" style="font-size: 20px;">Unit 6:  1865-1898</p>
+        <p align="center"><a href="mainpage.html" id="link">Summary:  Units 1-9</a></p>
+        </ul>
+        
+    </div><br>
+
+    <div class="wrapper">
+        <div class="info">
+            <p id="KC1"><b>Key Concept 6.1:  The growth of big business in the US drove urbanization, migrations, government and popular efforts to change the US economy and environment, and debates about US national identity.</b></p>
+            <div id="KC1Bullet" style="display: block;">
+                <ul>
+                    <li><b>6.1I The Causes and Characteristics of the Gilded Age:  </b>Large-scale production, massive technological change, growing worldwide communication networks, and pro-growth government policies drove the Gilded Age, which emphasized consumption, marketing, and business consolidation.  After the Civil War, government subsidies for transportation and communication opened new markets in North America, and technological innovations and remodeled financial and management systems such as monopolies worked to exploit natural resources and a growing labor force.  Meanwhile, businesses and foreign policymakers saw opportunities to expand their power over Pacific, Asian, and Latin American markets and natural resources.  Business leaders also united corporations into trusts and holding companies while defending their resulting wealth and privilege through theories such as Social Darwinism.  As cities grew, some segments of US society enjoyed lives of conspicuous wealth, while many others lived in poverty.</li>
+                    <li><b>6.1II The Workforce and its Changes:  </b>Big business leaders and their government allies aimed to create a united industrialized nation, but faced challenges such as demographic issues, regional differences, and labor movements.  Intra- and international migration led to a larger, more diverse workforce, in addition to lower wages and the growth of child labor.  In response to poor wages and working conditions, workers organized local and national unions and confronted corporate power, leading to struggles between labor and management for control.  Meanwhile, while some southern leaders called for a “New South” as some areas of the southern economy industrialized, sharecropping and tenant farming continued to dominate the South.</li>
+                    <li><b>6.1III New Systems, New Problems:  </b>Because of westward migration, new transportation and farming systems, and economic instability, political and popular conflicts emerged.  Government agencies, conservationist organizations, and corporations debated about the extension of public control over natural resources, such as land and water.  Business interests and conservationists especially battled, as conservationists worked to protect parts of the wilderness through national parks and other similar measures.  Meanwhile, farmers realized there were new complications that arose from mechanized agriculture and dependence on the railroad system, and as a result they created local and regional organizations aiming to resist corporate control of agricultural markets.  These farmers’ resistance to growing corporate power and economic instability in the agricultural sector led to the formation of the People’s Party (aka Populists), who wanted political reform and a stronger governmental role in the economy.</li>
+                </ul>
+            </div>
+            <p id="KC2"><b>Key Concept 6.2:  The rise of industrial culture in the US gave both more opportunities and limitations for minorities, immigrants, and women.</b></p>
+            <div id="KC2Bullet" style="display: block;">
+                <ul>
+                    <li><b>6.2I Migrants’ and other Minorities' Experiences:  </b>Urban and rural populations from intranational and international migration, but gender, ethnic, racial, religious, and socioeconomic inequalities persisted, encouraging some reforms to try to address these inequalities.  Many international immigrants moved to the US from Asia and southern and eastern Europe, African Americans migrated within and out of the South, and many people moved into the US’s cities and the rural and boomtown regions of the West.  Immigrants wanted to both “Americanize” and keep their unique identities, and along with others, such as some women and African Americans, they were able to access new career opportunities even as they faced extensive social prejudices.   Growing cities drastically depicted divided conditions amongst races, ethnicities, cultures, and classes, but they offered economic opportunities as factories and new businesses spread.  In this environment where power was unevenly distributed, political machines offered social services in return for political support, settlement houses helped immigrants adapt to American language and customs, and women’s clubs and self-help groups aimed for intellectual development and social and political reform.</li>
+                    <li><b>6.2II Problems Out West:  </b>Native Americans suffered from the completion of transcontinental railroads (which brought more settlers west), US military actions, the decimation of buffalo populations, confinement to reservations, and assimilationist policies; these actions reduced their numbers and threatened their identity and culture.  After the Civil War, economic opportunities and government policies encouraged migration to the West, which resulted in the US government violating treaties with the indigenous peoples to expand the amount of land open to settlers.  This competition for land in the West amongst white settlers, Native Americans, and Mexican Americans resulted in more violent conflicts.  As Native Americans resisted, the federal government generally responded with military force, eventually dispersing tribes onto small reservations and trying to end tribal identities through assimilation.</li>
+                </ul>
+            </div>
+            <p id="KC3"><b>Key Concept 6.3:  During the Gilded Age, new cultural and intellectual movements gained momentum as debates over economic and social policies raged.</b></p>
+            <div id="KC3Bullet" style="display: block;">
+                <ul>
+                    <li><b>6.3I The Impact of Different Social Theories:  </b>  Gilded Age politics and big business were heavily interconnected, and politics focused mainly on economic issues such as currency, tariffs, corporate expansion, and laissez-faire economic policies.  As a result of corruption in government (especially when addressing such issues pertaining to big business), the public called for increased popular control and reform of local, state, and national governments, from small changes to major ones.  Meanwhile, racist and nativist theories grew, and along with Supreme Court decisions such as <i>Plessy v. Ferguson</i> were used to justify violence and local and national policies of discrimination and segregation.</li>
+                    <li><b>6.3II Addressing the Social Order:  </b>The new cultural and intellectual movements of the Gilded Age both reinforced and challenged the social hierarchy.  Some argued that the success of those at the top of the socioeconomic structure was right and inevitable, while others argued the wealthy had some obligation to help the less fortunate.  Several criticized the US’s dominant corporate ethic and sometimes capitalism itself, suggesting other visions of good society through the Social Gospel and utopianism.  Women and African American activists challenged their prescribed place in society, offering their own visions of political, social, and economic equality.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="pictures">
+            <div class="picFormat" align="center">
+                <img src="U6PicTammanyHall.JPG" class="image">
+                <p class="caption">As immigration rose significantly, so did the importance of political machines.  Perhaps one of the most infamous of these organizations was Tammany Hall (pictured above), which controlled New York City politics for decades.  In exchange for their votes, Tammany Hall gave inhabitants—especially immigrants—favors, such as supplies and jobs.  To keep control, the organization often resorted to illegal activities, including theft, embezzlement, threats, and bribes.  This corruption was occasionally acted against; for instance, in the 1870s, William “Boss” Tweed, one of the most notorious leaders of Tammany Hall, was convicted of theft and died in jail.  However, the political machine continued to have power as late as the 1930s. (Key Concept 6.2ID)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U6PicHaymarket.JPG" class="image">
+                <p class="caption">The Knights of Labor, founded by Terrence Powderly, was the first national union and at one time was one of the most popular, fighting for things such as 8-hour workdays and including members regardless of race or gender.  However, its popularity drastically declined after the Haymarket Riot of 1886.  After thousands of Chicago workers went on strike, socialists and anarchists also joined in, believing the incident could support their own agendas.  On May 3rd, a rally was called in Haymarket Square.  As the rally was ending, the police arrived, and a bomb was thrown at the police.  As a result, the police fired (killing 4) and arrested several anarchists, several of whom were convicted.  Although Powderly condemned anarchism and denied any involvement in the bombing, many people associated the Knights of Labor with the violence of the Haymarket Riot, and as a result the union was essentially gone by 1900. (Key Concept 6.1IIB)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U6PicGospelOfWealth.JPG" class="image">
+                <p class="caption">There were several theories about society and wealth during the Gilded Age, one of which being the Gospel of Wealth.  Its main proponent was Andrew Carnegie, who had earned a fortune in the steel industry.  According to the philosophy, it was the duty of the rich to give money to the poor—starkly contrasting with Social Darwinism, which stated that one’s economic status was a result of “survival of the fittest” and “natural selection” and thus the poor deserved their economic state.  However, the Gospel of Wealth also said that it was up to the wealthy to determine who they believed was the most “worthy” of receiving aid, as opposed to offering help to everyone (the idea espoused by Social Gospel). (Key Concept 6.3IIA)</p>
+            </div>
+            <div class="picFormat" align="center">
+                <img src="U6PicWoundedKnee.JPG" class="image">
+                <p class="caption">The Battle of Wounded Knee, also known as the Wounded Knee Massacre, occurred mainly for two reasons:  settlers’ response to the Ghost Dance movement and the poor quality of Native American reservations.  The Ghost Dance movement was part of a larger Native American religious movement that promoted returning to traditional practices.  Participants believed that if they returned to their traditional customs, the settlers would be driven from their land and the buffalo would return.  However, settlers feared the Ghost Dance movement, resulting in the US Army going to the area of the reservation to investigate.  Secondly, because the reservation quality was so poor, several Lakotas on the reservation attempted to leave.  In December 1890, when the US Army attempted to arrest a group that had tried to leave the reservation, they resisted, and shooting began.  By the end of the battle, several hundred Lakota were dead.  The massacre also had more lasting effects, as it marked the end of Native American resistance.   (Key Concept 6.2IIC)</p>
+            </div>
+        </div>
+    </div>
+
+    <p align="center" class="backgroundCaption">On May 10th, 1869, the Union Pacific rail and the Central Pacific rail connected in Promontory Point, Utah, marking the completion of the Transcontinental Railroad.  The idea of a railroad spanning the nation had existed for decades and had been supported by many.  With its completion, the Transcontinental Railroad significantly encouraged Western settlement, as it meant that it would be easier to ship goods to and receive needed supplies from markets on the other side of the country. (Key Concept 6.1IA)</p>
+    <div class="footer">
+        <p>Images from:</p>
+        <ul>
+            <li>https://www.nps.gov/gosp/learn/historyculture/a-moment-in-time.htm</li><!--Completion of TCR-->
+            <li>https://www.youtube.com/watch?v=Spgdy3HkcSs&list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s&index=28 </li><!--Tammany Hall-->
+            <li>https://www.youtube.com/watch?v=r6tRp-zRUJs&list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s&index=26</li><!--Haymarket Riot-->
+            <li>https://www.target.com/p/gospel-of-wealth-books-of-american-wisdom-by-andrew-carnegie-hardcover/-/A-83193898</li><!--Gospel of Wealth-->
+            <li>https://www.sdstate.edu/south-dakota-agricultural-heritage-museum/national-history-day-south-dakota/wounded-knee-massacre</li><!--Wounded Knee-->
+        </ul>
+    </div>
+</body>
+</html>
