@@ -188,7 +188,7 @@ let mysteryItem3 = new Item("strengthening potion", "positive", 1, 3);
 let mysteryItem4 = new Item("weakening potion", "negative", -2, -2);
 
 let Alpha = new Character("Alpha", 10, 2, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
-let Beta = new Character("Beta", 5, 3, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
+let Bravo = new Character("Bravo", 5, 3, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
 //difference between characters and enemies:  don't want characters to have armor, and don't want enemies to have inventories; want enemy attack function to act differently
 let Charlie = new Enemy("Charlie", 3, 0, 3, false);
 let Delta = new Enemy("Delta", 5, 0, 2, false);
@@ -204,7 +204,7 @@ startButton.onclick = function(){
     console.clear();
     submitButton.style.display = "block";
     Alpha = new Character("Alpha", 10, 2, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
-    Beta = new Character("Beta", 5, 3, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
+    Bravo = new Character("Bravo", 5, 3, ["sword", mysteryItem1, mysteryItem2, mysteryItem3, mysteryItem4], false);
     Charlie = new Enemy("Charlie", 3, 0, 3, false);
     Delta = new Enemy("Delta", 5, 0, 2, false);
     Echo = new Enemy("Echo", 2, 2, 1, false);
@@ -212,7 +212,7 @@ startButton.onclick = function(){
     Golf = new Enemy("Golf", 10, 5, 3, false);
     Hotel = new Enemy("Hotel", 7, 4, 3, false);
 
-    //display submit button while Alpha.getDefeated() = false and Beta.getDefeated() = false  (otherwise, do NOT display it)
+    //display submit button while Alpha.getDefeated() = false and Bravo.getDefeated() = false  (otherwise, do NOT display it)
 
 
     /**Describing situation */
@@ -355,31 +355,31 @@ startButton.onclick = function(){
 function playerTwoPath(){
     Golf = new Enemy("Golf", 10, 5, 3, false);
 
-    alert("As you keep going, you see a shadowy figure.  You approach and see that it is your friend Beta, who explains he is also trying to cross through the forest, but that there is a powerful enemy up ahead.  'I don't think I could withstand the amount of damage that person can inflict,' he says.  'I know the two of us bought the some of the same things in town--a health potion, poison, a strengthening potion, and a weakening potion--but it's too dark for me to see which is which.'");
-    console.log("You know that it would be too dangerous to wait until morning, so you will have to guess which items are safe and which are not.  You also need to make sure both you and Beta have used the item; otherwise, one of you may be defeated, and you will fail.  Thankfully, since you and Beta have the same things in your bags and the items in a corresponding pair have the same shape, you know that your mysteryItem1 is the same as Beta's mysteryItem1, and so on.");
-    console.log("Use the items in the inventories on Alpha and Beta (these are the names you will use when typing in commands).  When you are ready, press the submit button.");
+    alert("As you keep going, you see a shadowy figure.  You approach and see that it is your friend Bravo, who explains he is also trying to cross through the forest, but that there is a powerful enemy up ahead.  'I don't think I could withstand the amount of damage that person can inflict,' he says.  'I know the two of us bought the some of the same things in town--a health potion, poison, a strengthening potion, and a weakening potion--but it's too dark for me to see which is which.'");
+    console.log("You know that it would be too dangerous to wait until morning, so you will have to guess which items are safe and which are not.  You also need to make sure both you and Bravo have used the item; otherwise, one of you may be defeated, and you will fail.  Thankfully, since you and Bravo have the same things in your bags and the items in a corresponding pair have the same shape, you know that your mysteryItem1 is the same as Bravo's mysteryItem1, and so on.");
+    console.log("Use the items in the inventories on Alpha and Bravo (these are the names you will use when typing in commands).  When you are ready, press the submit button.");
     submitButton.onclick = function(){
         let response5 = prompt("Are you ready to move on?  If so, type 'moveOn'.");
 
         if(response5 == "moveOn"){
-            alert("You come across the enemy Beta was talking about, who inflicts 9 damage on you and 6 on Beta.");
+            alert("You come across the enemy Bravo was talking about, who inflicts 9 damage on you and 6 on Bravo.");
             Golf.hit(Alpha);   Golf.hit(Alpha);   Golf.hit(Alpha);
-            Golf.hit(Beta);  Golf.hit(Beta);
-            if(Alpha.getDefeated() == false && Beta.getDefeated() == false){
+            Golf.hit(Bravo);  Golf.hit(Bravo);
+            if(Alpha.getDefeated() == false && Bravo.getDefeated() == false){
                 console.log("Both of you survived the enemy's attack, so now you can launch your own attack.  You must defeat the enemy before you move on.  The enemy's name is Golf.  Once you are ready, press the submit button to move on.");
                 submitButton.onclick = function(){
                     let response6 = prompt("Are you ready to move on?  If so, type 'moveOn'.");
                     if(response6 == "moveOn"){
                         let GolfDefeated = Golf.getDefeated();
                         if (GolfDefeated == true){/**WIN*/
-                            alert("You and Beta have defeated Golf and begin running down the path, desperate to get out of the forest before anyone else can attack you.  Finally, as you are almost out of energy, you see the trees thin out, and you can see your village in the distance.");
+                            alert("You and Bravo have defeated Golf and begin running down the path, desperate to get out of the forest before anyone else can attack you.  Finally, as you are almost out of energy, you see the trees thin out, and you can see your village in the distance.");
                             alert("Congratulations, you have won the game!  If you want to play again, press the start button.");
                             submitButton.style.display = "none";
                         } else if(GolfDefeated == false){/**LOSE:  GOLF--NOT DEFEATED */
                             Alpha.setDefeated(true);
-                            Beta.setDefeated(true);
+                            Bravo.setDefeated(true);
                             console.log("You were defeated.");
-                            alert("You forgot to defeat Golf, and Golf defeated you and Beta while you attempted to move on.  Click the start button to try again.");
+                            alert("You forgot to defeat Golf, and Golf defeated you and Bravo while you attempted to move on.  Click the start button to try again.");
                             submitButton.style.display = "none";
                         }
 
@@ -393,7 +393,7 @@ function playerTwoPath(){
             } else {/**LOSE:  GOLF--ATTACK */
                 console.log("Since both of you didn't survive the attack, you have lost.  Press the start button to retry.");
                 Alpha.setDefeated(true);
-                Beta.setDefeated(true);
+                Bravo.setDefeated(true);
                 console.log("You were defeated.");
                 submitButton.style.display = "none";
 
