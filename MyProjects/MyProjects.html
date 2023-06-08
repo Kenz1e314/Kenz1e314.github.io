@@ -12,12 +12,6 @@
             height: 100vh;
             width: 100vw;
         }
-        .wrapper{
-            display:  grid;
-            grid-template-columns:  repeat(4, 1fr);
-            grid-template-rows:  repeat(4, 1fr);
-            width: 100%;
-        }
         .link{
             background-color: aqua;
             color:  rgb(0, 100, 100);
@@ -35,8 +29,14 @@
         }
         .link:focus{
             text-decoration:underline;
+        }        
+        
+        .wrapper{
+            display:  grid;
+            grid-template-columns:  repeat(4, 1fr);
+            grid-template-rows:  repeat(3, 1fr);
+            width: 90%;
         }
-
         #ThreeXPlusOne{
             grid-column-start:  1;
             grid-column-end:  2;
@@ -68,17 +68,45 @@
             grid-row-start:  2;
             grid-row-end:  3;
         }
+        
+        .wrapper2{
+            display:  grid;
+            grid-template-columns:  repeat(4, 1fr);
+            grid-template-rows:  repeat(3, 1fr);
+            width: 90%;
+        }
+        #APUSH{
+            grid-column-start:  1;
+            grid-column-end:  2;
+            grid-row-start:  1;
+            grid-row-end:  2;
+        }
+        #AdvCS{
+            grid-column-start:  2;
+            grid-column-end:  3;
+            grid-row-start:  1;
+            grid-row-end:  2;
+        }        
     </style>
 </head>
 <body>
     <h1>My Projects:</h1>
     <br>
+    <p>Independent Projects:</p>
     <div class="wrapper">
         <a target = "_blank" href = "3x+1 Problem.html" class="link" id="ThreeXPlusOne">3x+1 Problem</a>
         <a target = "_blank" href = "Hello World.html" class="link" id="HelloWorld">Hello World Animation</a>
         <a target = "_blank" href = "PracticingCSS.html" class="link" id="PracticeCSS">Practicing CSS</a>
         <a target = "_blank" href = "PracticingCSSAnimation.html" class="link" id="PracticeCSSAnimation">Practicing CSS Animation</a>
         <a target = "_blank" href = "RoseCurveAnimation.html" class="link" id="RoseCurve">Rose Curve Animation</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>School Projects:</p>
+    <div class="wrapper2">
+        <a target = "_blank" href = "https://kenz1e314.github.io/APUSHProject/mainpage.html" class="link" id="APUSH">APUSH Final Project</a>
+        <a target = "_blank" href = "https://kenz1e314.github.io/Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html" class="link" id="AdvCS">Advanced CS Final Project</a>
     </div>
 </body>
 </html>
