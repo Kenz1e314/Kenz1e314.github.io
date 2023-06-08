@@ -24,7 +24,6 @@ let returnV = document.getElementById("returnV");
 
 let numbers = [];
 
-let count = 0;
 form.onsubmit = function(event){//see HTML note on form
     event.preventDefault();//this prevents the form from submitting and thus prevents the page from refreshing--see HTML note on form
     console.clear();
@@ -43,6 +42,7 @@ form.onsubmit = function(event){//see HTML note on form
         }
         
         //This code is designed to prevent the page from getting stuck in an infinite loop.
+        let count = 0;
         count++;
         if(count > 1000){   break;   }
     }
