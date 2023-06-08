@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+        .wrapper{
+            display:  grid;
+            grid-template-columns:  repeat(4, 1fr);
+            grid-template-rows:  repeat(4, 1fr);
+            width: 100%;
+        }
+        .link{
+            background-color: aqua;
+            color:  rgb(0, 100, 100);
+            padding:  20px 15px;
+            text-decoration:  none;
+            text-align: center;
+            border-radius:  10px;
+            margin-top: 30px;
+            height:  30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .link:hover{
+            background-color:aquamarine;
+        }
+        .link:focus{
+            text-decoration:underline;
+        }
+
+        #ThreeXPlusOne{
+            grid-column-start:  1;
+            grid-column-end:  2;
+            grid-row-start:  1;
+            grid-row-end:  2;
+
+        }
+        #HelloWorld{
+            grid-column-start:  2;
+            grid-column-end:  3;
+            grid-row-start:  1;
+            grid-row-end:  2;
+        }
+        #PracticeCSS{
+            grid-column-start:  3;
+            grid-column-end:  4;
+            grid-row-start:  1;
+            grid-row-end:  2;
+        }
+        #PracticeCSSAnimation{
+            grid-column-start:  4;
+            grid-column-end:  5;
+            grid-row-start:  1;
+            grid-row-end:  2;
+        }
+        #RoseCurve{
+            grid-column-start:  1;
+            grid-column-end:  2;
+            grid-row-start:  2;
+            grid-row-end:  3;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Projects:</h1>
+    <br>
+    <div class="wrapper">
+        <a target = "_blank" href = "3x+1 Problem.html" class="link" id="ThreeXPlusOne">3x+1 Problem</a>
+        <a target = "_blank" href = "Hello World.html" class="link" id="HelloWorld">Hello World Animation</a>
+        <a target = "_blank" href = "PracticingCSS.html" class="link" id="PracticeCSS">Practicing CSS</a>
+        <a target = "_blank" href = "PracticingCSSAnimation.html" class="link" id="PracticeCSSAnimation">Practicing CSS Animation</a>
+        <a target = "_blank" href = "RoseCurveAnimation.html" class="link" id="RoseCurve">Rose Curve Animation</a>
+    </div>
+</body>
+</html>
