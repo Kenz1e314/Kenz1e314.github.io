@@ -1,0 +1,127 @@
+body{
+    background-color:  azure;
+    height:  100vh;
+    width:  100vw;
+    margin:  0;
+    padding:  0;
+    animation:  colorChange 20s infinite;/**You can replace 'infinite' with a number**/
+    /**NOTE:  If you wanted the animation to end with the final values (instead of resetting), use the code 'animation-fill-mode: forwards;' 
+    To delay the start of the animation, use animation-delay:  #s**/
+}
+
+.wrapper{
+    display:  grid;
+    /**grid-template-colums: 200px 200px 200px   explicit size**/
+    /**grid-template-columns:  2fr 1fr 1fr 1fr; **//**fractional size**/
+    /**4 columns--see below**/grid-template-columns:  repeat(4, 1fr); /**Allows you to repeat fractional size**/
+}
+#div1{
+    grid-column-start:  1;
+    grid-column-end:  5;
+    grid-row-start:  1;
+    grid-row-end:  2;
+    background-color:  blue;
+    outline:  1px solid black;
+}
+#div2{
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  2;
+    grid-row-end:  3;
+    background-color:  lightgrey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#div3{
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  3;
+    grid-row-end:  4;
+    background-color:  lightgrey;
+    margin-left: 10px;
+    display:  grid;
+    /*button{
+        display: block;
+    }*/
+}
+#div4{
+    grid-column-start:  2;
+    grid-column-end:  4;
+    grid-row-start:  2;
+    grid-row-end:  4;
+    background-color:  lightblue;
+    margin-top: 10px;
+    overflow: auto;
+}
+#div5{
+    grid-column-start:  4;
+    grid-column-end:  5;
+    grid-row-start:  2;
+    grid-row-end:  3;
+    background-color:  lightgrey;
+    outline:  1px solid black;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#div6{
+    grid-column-start:  4;
+    grid-column-end:  5;
+    grid-row-start:  3;
+    grid-row-end:  4;
+    background-color:  lightgrey;
+    outline:  1px solid black;
+    margin-right: 10px;
+}
+
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+
+::selection{
+    background-color: rgb(0, 255, 255, 0.75);
+    color: rgb(0, 100, 100);
+}
+@keyframes colorChange{
+    0%  {background-color:  azure;}
+    50% {background-color:  rgb(47, 151, 254);}
+    100% {background-color: azure;}
+    /**from{background-color: azure;}
+    to{background-color:rgb(47, 151, 254);}**/
+}
+#movingText{
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px 50px 30px 5px;
+    border-left:  5px dotted pink;
+    border-top:  5px double;
+    border-bottom: 5px solid pink;
+    background-color: crimson;
+    position: relative;
+    rotate: 0deg;
+    animation:  changingText 20s infinite;
+}
+@keyframes changingText{
+    0% {top: 10px; left: 10px; color: crimson; rotate: 0deg;}
+    25% {top: 10px; left: 60px; color: pink; rotate: 90deg;}
+    50% {top: 60px; left: 60px; color: crimson; rotate: 180deg;}
+    75% {top: 60px; left: 10px; color: pink; rotate: 270deg;}
+    100% {top: 10px; left: 10px; color: crimson; rotate: 360deg;}
+}
+#rightToLeft{
+    text-align:  right;
+    user-select:  none;
+}
+textArea{
+    width:  100px;
+    height:  30px;
+    transition:  width 2s;
+}
+textArea:hover{
+    width: 300px;
+}
