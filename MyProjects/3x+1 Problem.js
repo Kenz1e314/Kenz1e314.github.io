@@ -29,17 +29,18 @@ form.onsubmit = function(event){//see HTML note on form
     console.clear();
     let inputValue = input.value;
     numbers = [inputValue];
-    while(numbers[numbers.length-1] != 1 && numbers[numbers.length-1] != 2 && numbers[numbers.length-1] != 4){
-        if (numbers[numbers.length-1]%2 == 0){
-            let newV2 = numbers[numbers.length-1] / 2;
-            console.log(newV2);
-            numbers.push(newV2);
-        }
-        if (numbers[numbers.length-1]%2 != 0){
-            let newV3 = (numbers[numbers.length-1]*3)+1;
-            console.log(newV3);
-            numbers.push(newV3);
-        }
+    if (inputValue > 0){
+        while(numbers[numbers.length-1] != 1 && numbers[numbers.length-1] != 2 && numbers[numbers.length-1] != 4){
+            if (numbers[numbers.length-1]%2 == 0){
+                let newV2 = numbers[numbers.length-1] / 2;
+                console.log(newV2);
+                numbers.push(newV2);
+            }
+            if (numbers[numbers.length-1]%2 != 0){
+                let newV3 = (numbers[numbers.length-1]*3)+1;
+                console.log(newV3);
+                numbers.push(newV3);
+            }
         
         //This code is designed to prevent the page from getting stuck in an infinite loop.
         let count = 0;
@@ -48,6 +49,10 @@ form.onsubmit = function(event){//see HTML note on form
     }
     //return numbers;
     returnV.innerHTML = numbers.toString();
+    } else{
+        alert("That is not a valid input.");
+    }
+
 }
 
 
