@@ -23,14 +23,14 @@ changeStyle.onclick = function(){
     console.log("changeStyle");
     //document.getElementById("image").src = "sunset.jpg";
     div4.style.setProperty('background-color', 'rgb(255, 255, 255)');
-    div4.innerHTML = '<p>Hello!  Click 6.1 to reset.</p> <br> <p><img id="image" src = "sunset.jpg"></img></p>';
+    div4.innerHTML = '<p>Hello!  Click 6.1 to reset.</p> <br> <p><img id="image" src = "sunset.JPG"></img></p>';
 }
 
 let sixOne = document.getElementById("sixOne");
 sixOne.onclick = function(){
     console.log("Back to normal");
     div4.style.setProperty('background-color', 'lightblue');
-    div4.innerHTML = '<p>Four:  Lorem ipsum random text going on and on and on and on....</p><p><a href = "madeup"><img id = "image" src = "ornament.jpg"></a></p>';
+    div4.innerHTML = '<p>Four:  Lorem ipsum random text going on and on and on and on....</p><p><a href = "madeup"><img id = "image" src = "ornament.JPG"></a></p>';
 }
 
 let toggle = document.getElementById("toggle");
