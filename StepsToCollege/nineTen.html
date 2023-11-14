@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th-10th Grade</title>
+    <style>
+
+        /**To-do:
+        Make the 9th-10th picture a picture instead of a pic/linear gradient combination
+        Make the black background a picture
+        Use code along these lines to fade between the pictures (use background in the transition code)
+
+        let isImage1 = true;
+
+function transitionBackground() {
+  isImage1 = !isImage1;
+  const newBackground = isImage1 ? 'url("image1.jpg")' : 'url("image2.jpg")';
+
+  // Change the background image gradually
+  imageContainer.style.background = newBackground;
+        */
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        .picture, .wrapper1{
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('nineTen.JPG');/*darkening the image w/o darkening the rest of the div*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .picture{
+                margin: 0px;
+                padding: 0px;
+                min-height: 100vh;
+                color: white;
+                top: 0;
+                background-attachment: fixed;
+                z-index: 2;
+        }
+
+        .wrapper1{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            /*background-color:transparent;
+            background-repeat: no-repeat;*/
+            opacity: 100%;
+            position: sticky;
+            top: 0;/*have to specify this for sticky to work--tells it to stick to top of page*/
+            box-shadow: 10px rgba(0, 0, 0, 0.35);
+            transition: background 0.5s ease;
+        }
+            #title{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                margin: 0;
+                font-size: 30px;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            #fiveEightContainer{
+                grid-column-start: 7;
+                grid-column-end: 8;
+                position: relative; /**ChatGPT*/
+                align-items: center;
+            }
+                #fiveEightContainer:hover .dropdown1{/**ChatGPT*/
+                    display: block;
+                }
+                .dropdown1{/**ChatGPT*/
+                    display: none;
+                    position: absolute;
+                    width: 85%;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 10px;
+                    background-color:rgb(50, 50, 50);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.35);
+                }
+                #Section1{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 13px;
+                }
+            #nineTenContainer{
+                grid-column-start: 8;
+                grid-column-end: 9;
+                position: relative;
+                align-items: center;
+            }
+                #nineTenContainer:hover .dropdown2{
+                    display: block;
+                }
+                .dropdown2{
+                    display: none;
+                    position: absolute;
+                    width: 85%;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 10px;
+                    background-color:rgb(50, 50, 50);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.35);
+                }
+                #Section21, #Section22{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 13px;
+                }
+            #juniorsContainer{
+                grid-column-start: 9;
+                grid-column-end: 10;
+                position: relative;
+                align-items: center;
+            }
+                #juniorsContainer:hover .dropdown3{
+                    display: block;
+                }
+                .dropdown3{
+                    display: none;
+                    position: absolute;
+                    width: 85%;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 10px;
+                    background-color:rgb(50, 50, 50);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.35);
+                }
+                #Section31, #Section32, #Section33{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 12.9px;
+                    overflow:hidden;
+                }
+            #seniorsContainer{
+                grid-column-start: 10;
+                grid-column-end: 11;
+                position: relative;
+                align-items: center;
+            }
+                #seniorsContainer:hover .dropdown4{
+                    display: block;
+                }
+                .dropdown4{
+                    display: none;
+                    position: absolute;
+                    width: 85%;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 10px;
+                    background-color:rgb(50, 50, 50);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+                }
+                #Section41, #Section42{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 13px;
+                }
+                #Section1:hover, #Section21:hover, #Section22:hover, #Section31:hover, #Section32:hover, 
+            #Section33:hover, #Section41:hover, #Section42:hover, #Section43:hover{
+                background-color: rgb(80, 80, 80);
+            }
+
+            #fiveEight, #nineTen, #juniors{
+                padding: 10px;
+                padding-bottom: 5px;
+                border-left: solid 1px white;
+                border-right: solid 1px white;
+            }
+            #seniors{
+                border-left: solid 1px white;
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+
+
+            .headings{
+                font-size: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .descriptions{
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 25px;
+                padding-left: 30px;
+                padding-right: 30px;
+                overflow: auto;
+            }
+
+
+            .info{
+                color: black;
+                margin: 10px;
+                text-indent: 40px;
+                line-height: 1.6;
+            }
+            .footer{
+                color: white;
+                margin: 0px;
+                bottom: 0;
+                font-size: 15px;
+                background-color:rgb(83, 21, 141);
+            }
+            #footerText{
+                padding: 10px;
+                padding-top: 20px;
+            }
+        
+
+    </style>
+
+    <script defer>
+        window.addEventListener('scroll', function(){
+            const scrollPosition = window.scrollY;
+            const wrapper1 = document.querySelector(".wrapper1");//works like getElementsByClassName, but doesn't require me to loop through each element of the class to apply the color change
+            if (scrollPosition>=100){
+                wrapper1.style.background = "linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0))";
+            } else{
+                wrapper1.style.background = "linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('nineTen.JPG')";
+                wrapper1.style.backgroundSize = "cover";
+                wrapper1.style.backgroundRepeat = "no-repeat";
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper1">
+    
+        <h1 id="title"><a href="StepsToCollege.html">Steps to College</a></h1>
+        <div id="fiveEightContainer">
+            <p id="fiveEight">5th-8th</p>
+            <nav class="dropdown1">
+                <ul>
+                    <li id="Section1"><a href="fiveEight.html">5th-8th</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="nineTenContainer">
+            <p id="nineTen">9th-10th</p>
+            <nav class="dropdown2">
+                <ul>
+                    <li id="Section21"><a href="nineTenResume.html">Building a Resume</a></li>
+                    <li id="Section22"><a href="nineTenNotes.html">Other Notes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="juniorsContainer">
+            <p id="juniors">Juniors</p>
+            <nav class="dropdown3">
+                <ul>
+                    <li id="Section31"><a href="juniorsTest.html">Tests</a></li>
+                    <li id="Section32"><a href="juniorsColleges.html">Evaluating Colleges</a></li>
+                    <li id="Section33"><a href="juniorsRecommendations.html">Recommendation Letters</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="seniorsContainer">
+            <p id="seniors">Seniors</p>
+            <nav class="dropdown4">
+                <ul>
+                    <li id="Section41"><a href="seniorsApplications.html">Applications</a></li>
+                    <li id="Section42"><a href="seniorsYear.html">Senior Year</a></li>
+                    <li id="Section42"><a href="seniorsAcceptance.html">You've Been Accepted!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="picture" id="nineTenPic">
+            <br>
+            <h1 class="headings" align="center">9th-10th Grade</h1>
+            <p></p>
+            <h1 class="headings" align="center">Building a Resume</h1>
+            <br>
+            <p class="descriptions" align="center">While you can still get into many good colleges without much worry at this point, it is always a good idea to start high school strong.  This section focuses on the classic aspects of a resume, including how to improve your GPA, picking extracurriculars, and class rank.</p>
+    
+    </div>
+    
+    <div class="info">
+        <br>
+        <h2 font-size="25px" text-indent="none">Introduction</h2>
+        <p font-size="15px">Your resume is important step in the college process.  It essentially acts as a way for you to record all of your acccomplishments, which can make it easier for you to write college essays later and know what you want to share with the colleges you apply to.  At this stage, your resume does not have to be very organized.  List any accomplishments or participation you have, even if they seem small or obscure.  You can thin out this list later when you are completing applications.</p>
+        
+        <h2 font-size="25px" text-indent="none">Grades:  Picking Classes and Excelling</h2>
+        <p font-size="15px">To increase your odds of acceptance, grades are important.  Most schools consider both the intensity of your coursework (compared to what is offered by the school) and how high your grades were in each course.  Several colleges simply require the letter grade (A, B, C, etc.) and the level of difficulty (regular, honors, AP, etc.) of each course, but some colleges will require exact grades.  Some will let you submit your grades for high school courses you took in middle school, and others won’t.  Universities may calculate your grade point average differently than our school does, so your GPA in Skyward might not match the GPA the college assigns to you.</p>
+        <p font-size="15px">While it may seem like a good idea to take as many AP classes as possible since they are worth the most, keep in mind that AP classes are often more demanding.  According to many students, each AP lesson takes about twice as long as a regular lesson in the same class would take and about 50% longer than a similar honors class.  Also, assessments in AP classes are often harder than in other courses, which can result in lower grades.  There is some buffer--a 98 or greater in an AP class is better in terms of GPA than a 100 in an honors class, and an 88 in an AP class is better than a 100 in an on-level class.  However, if you are not prepared for the intense workload, you may not earn a high enough grade for it to be worth taking an AP class.  In general, unless you really want to take an AP exam to test out of a college course, it is best to take an honors course when possible.  If you wish to take AP courses, iUP generally advises students to take no more than 3-4 AP classes per year.</p>
+        <p font-size="15px">On the other hand, taking "easier" classes (especially if you take a lot of them) may not look as great on a college application.  If you are unsure about what classes to take, you can ask the current teacher of that class what the course is like and use online curriculum such as CrashCourse and Khan Academy to get a feel for the difficulty.</p>
+        <p font-size="15px">Your GPA has a significant impact on something else:  class rank.</p>
+
+        <h2 font-size="25px" text-indent="none">Class Rank</h2>
+        <p font-size="15px">Class rank is not mentioned much at iUP.  In GCISD, class ranks are only released in the fall and spring semesters of your senior year, and you do not receive a ranking unless you are in the top 10% of your class.  In spite of this, class rank can be vital.  Depending on what schools you are applying to, your class rank may significantly impact your chances of admission.  For instance, all Texas public universities will automatically admit a student if they are in the top 10% of their class at the time of application (except for UT Austin, with top 6%).</p>
+        <p font-size="15px">It is worth noting, however, that just because you get into the school does not mean you will get into your desired major.  For most colleges, there are separate schools within the university that you are also applying for when filling out your application and declaring a major.  These schools often accept a limited number of students, meaning that getting accepted into the school does not necessarily mean getting accepted into the program you want.  This is especially true for engineering, which has the majority of impacted (i.e. limited-space) majors.</p>
+        <p font-size="15px">Grades aren't all you have to think about, though;  you also need extracurriculars on your resume.</p>
+    
+        <h2 font-size="25px" text-indent="none">Extracurriculars</h2>
+        <p font-size="15px">You can get involved in activities both inside and outside of school.  Keep a record of when you participated in the activity, how you participated in each activity, and the amount of time you spent participating.  Colleges generally look for quality of involvement rather than quantity, so it is generally better to have significant involvement in a few activities than weak involvement in several.  Schools also look for extracurriculars that reflect your interest in your desired major, round you out, and/or allow you to show leadership (whether as an official leader or as a member who helped organize or set up events.</p>
+        <p font-size="15px">There are many ways to take part in resume-strengthening events at iUP.  There are a variety of clubs to join, and even if you do not hold an official leadership position in these clubs, there are still many ways to demonstrate leadership skills as you collaborate with your peers.  There are even some resume-building opportunities in the classroom.  At the beginning of the year, many teachers ask for live lesson assistants who help let students in, monitor the chat, and encourage fellow classmates.</p>
+        <p font-size="15px">If you can find activities outside of school you are interested in, it would be a good idea to join some of these as well.  Such activities include summer camps (including some college-hosted ones), music/theater/sports organizations, political lobbying organizations, community service organizations, and more.  Internet and social media research can usually help you find these activities.</p>
+        <br>
+    </div>
+    <div class="footer">
+        <p id="footerText">This information was last updated in November 2023.</p>
+        <br>
+    </div>
+</body>
+</html>
