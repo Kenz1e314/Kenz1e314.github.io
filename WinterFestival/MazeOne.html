@@ -128,6 +128,7 @@
         let key = document.getElementById("key");
 
         let isKey = false;
+        let noMoreKey = false;
 
         mazeImage.onclick = function(){
             let x = event.offsetX;
@@ -140,7 +141,7 @@
                 notes.style.visibility = "visible";
             }
             //green ornament
-            if(x>0.13*mazeImage.width && x<0.31*mazeImage.width && y>0.63*mazeImage.height && y<0.89*mazeImage.height){
+            if(noMoreKey == false x>0.13*mazeImage.width && x<0.31*mazeImage.width && y>0.63*mazeImage.height && y<0.89*mazeImage.height){
                 isKey = true;
                 key.style.visibility = "visible";
 
@@ -150,6 +151,7 @@
                 document.body.style.backgroundColor = "blue";
                 isKey = false;
                 key.style.visibility = "hidden";
+                noMoreKey = true;
             }
         }
     </script>
