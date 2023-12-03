@@ -83,12 +83,13 @@
         }
         .sidepanel{
             grid-row-start: 1;
-            grid-row-end: 4;
+            grid-row-end: 3;
             grid-column-start: 4;
             grid-column-end: 5;
             background-color:rgb(53, 63, 63);
             color: white;
             overflow: auto;
+            overflow-x: hidden;
         }
         #notes{
             max-width: 100%;
@@ -134,7 +135,7 @@
         <button id="left" >Left</button>
         <button id="straight">Straight</button>
         <button id="right">Right</button>
-        <div class="sidepanel">
+        <div class="sidepanel" id="sidePanel">
             <p>Clues:  </p>
             <textarea id="notes">Number-letter, shift 4 right for standard encryption:  14, 5, 3, 4, 16, 22 &#13;&#10Note:  There may be extra letters to prevent shortcuts</textarea>
             <div id="key">To use the key, find the number associated with each letter (A=1, B=2, etc.) and count through each letter in the message until you reach that number.  Do not include spaces or commas.  Once you have reached that number, write down the letter and move on to the next letter, starting at 1 again.  Once you have reached the end of the key, start over with the first letter until you reach the end of the message.Here is an example:<br>
@@ -154,6 +155,9 @@
         let right = document.getElementById("right");
 
         let scene = 1;
+        //Fixing display
+            let sidepanel = document.getElementById("sidePanel");
+            sidepanel.style.maxHeight = mazeImage.height +"px";
 
         mazeImage.onclick = function(){
             let x = event.offsetX;
