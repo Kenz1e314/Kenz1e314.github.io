@@ -94,8 +94,8 @@
         #notes{
             max-width: 100%;
             min-width: 80%;
-            min-height: 25%;
-            max-height: 45%;
+            min-height: 25px;
+            max-height: 80px;
             visibility: hidden;
         }
         #key{
@@ -103,8 +103,8 @@
             color: black;
             max-width: 90%;
             min-width: 80%;
-            min-height: 25%;
-            max-height: 45%;
+            min-height: 25px;
+            max-height: 80px;
             visibility: hidden;
             overflow: auto;
         }
@@ -158,9 +158,6 @@ let buttons = document.querySelectorAll(".button");//MAKE BUTTON CLASS
 let mazeImage = document.getElementById("mazeImage");
 let notes = document.getElementById("notes");
 let scene = 1;
-    //First, fixing display issues
-        let sidepanel = document.getElementById("sidePanel");
-        sidepanel.style.maxHeight = "${mazeImage.height}px";
 
 
 //Clicking for clues
