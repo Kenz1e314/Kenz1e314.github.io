@@ -90,7 +90,6 @@
             color: white;
             overflow: auto;
             overflow-x: hidden;
-            max-height: mazeImage.height;
         }
         #notes{
             max-width: 100%;
@@ -137,7 +136,7 @@
         <button id="left" class="button">Left</button>
         <button id="straight" class="button">Straight</button>
         <button id="right" class="button">Right</button>
-        <div class="sidepanel">
+        <div class="sidepanel" id="sidePanel">
             <p>Clues:  </p>
             <textarea id="notes">SEAL HARES SLEPT A SPELL&#13;&#10SIGH AS A LIGHT FELL&#13;&#10STARS RISE, ALL ARE RIGHT&#13;&#10RISE STARS, RAISE A SIGHT
             </textarea>
@@ -151,6 +150,7 @@
 
 
     <script defer>
+        
 let left = document.getElementById("left");
 let straight = document.getElementById("straight");
 let right = document.getElementById("right");
@@ -158,6 +158,9 @@ let buttons = document.querySelectorAll(".button");//MAKE BUTTON CLASS
 let mazeImage = document.getElementById("mazeImage");
 let notes = document.getElementById("notes");
 let scene = 1;
+    //First, fixing display issues
+        let sidepanel = document.getElementById("sidePanel");
+        sidepanel.style.maxHeight = "${mazeImage.height}px";
 
 
 //Clicking for clues
