@@ -129,6 +129,7 @@
     <div class="instructions">
         <p margin="20px">Welcome to the third and final maze!  Click different spots on the image to discover what you can, and use the buttons to navigate through the maze.  Be careful, though--one wrong move and you'll have to start over!</p>
         <p>This maze will be the hardest one yet:  unlike the other two, no path ends until after the fifth crossroad.  In other words, you will not know if you made a wrong move until the very end of the maze.</p>
+        <p>NOTE:  If "Clues:" doesn't show up on the display below, refresh the page.  I'm still trying to figure out what is causing this error.</p>
     </div>
 
     <div class="display" align="center">
@@ -329,7 +330,8 @@ let end = function(){
         notes.style.visibility = "visible";
         notes.value = "Congratulations, you have completed stage three of the maze and have reached the top of the mountain!  Click the link to continue.";
         left.style.visibility = "hidden";
-        straight.innerHTML = "<a href='INSERTCORRECTLINKHERE.HTML'>Click here to move on</a>";//INSERT CORRECT LINK HERE
+        straight.innerHTML = "This button doesn't go anywhere--it only works in the actual escape room";
+        //straight.innerHTML = "<a href='INSERTCORRECTLINKHERE.HTML'>Click here to move on</a>";//INSERT CORRECT LINK HERE
         right.style.visibility = "hidden";
     }
     //If not successful (fail)
