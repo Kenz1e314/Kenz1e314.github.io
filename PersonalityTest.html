@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Test</title>
+    <script defer src="PersonalityTest.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><!--For Pie Chart-->
+    <style>
+        body{
+            margin:  0;
+            padding:  0;
+            height:  100vh;
+            width:  100vw;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .heading{          
+            padding: 20px;
+            margin-left:  auto;
+            margin-right:  auto;
+            background-color:rgb(31, 31, 102);
+            color:aliceblue;
+            box-shadow: 0px 10px 10px darkgrey;
+        }
+        #title{
+            font-size: 50px;
+        }
+        #subheading{
+            font-size: 25px;
+        }
+
+        #body{
+            margin-left:  auto;
+            margin-right:  auto;
+            font-size:  20px;
+        }
+            #notes{
+                font-size: 17px;
+                margin-left: 10vw;
+            }
+            #pieChart{
+                display: none;
+            }
+            .button{
+                margin: 20px;
+                padding:  10px 20px;
+                background-color:rgb(59, 186, 190);
+                border:  0px;
+                border-radius: 10px;
+                transition: 0.3s; /*This is for hover so it isn't so drastic*/
+                font-size:  15px;
+                display:  none;
+            }
+                button:hover{
+                    background-color:aquamarine;
+                }
+                #startButton{
+                    display: block;
+                }
+    </style>
+
+
+</head>
+<body>
+    <div class="heading" align="center">
+        <h1 id="title" align="center">Personality Test</h1>
+        <p1 id="subheading" align="center">Late for Class</p1>
+    </div>
+
+    <div id="body" align="center">
+        <br>
+        <p id="paragraph">Welcome to the Personality Test:  Late for Class webpage!  Here are some notes before you begin:  </p>
+        <ul id="notes" align="left">
+            <li>To ensure the most accurate results, you will answer all questions regardless of what choices you make.</li>
+            <li>Answer all questions honestly.  What would you really do in that situation?</li>
+            <li>That being said, assume that you are capable of all presented options.  Don't avoid picking something just because you think you couldn't do it--this is about personality, not abilities.</li>
+        </ul>
+        <br>
+        <br>
+        <p>
+            <button id="buttonA" class="button">A</button>
+            <button id="buttonB" class="button">B</button>
+            <button id="buttonC" class="button">C</button>
+            <button id="buttonD" class="button">D</button>
+            <button id="buttonE" class="button">E</button>
+        </p>
+
+        <div id="pieChart">
+
+        </div>
+
+        <br>
+        <button id="startButton" class="button">Start</button>
+
+
+    </div>
+
+
+    <!--   
+    <script defer>
+        //initializing HTML references
+        let paragraph = document.getElementById("paragraph");
+        let buttonA = document.getElementById("buttonA");
+        let buttonB = document.getElementById("buttonB");
+        let buttonC = document.getElementById("buttonC");
+        let buttonD = document.getElementById("buttonD");
+        let buttonE = document.getElementById("buttonE");
+        let buttons = document.querySelectorAll(".button");
+
+        //Have to create a class and instances of the class or else the code doesn't save changes to the values
+        class values{
+            value = 0;
+        }
+        let one = new values(0);
+        let two = new values(0);
+        let three = new values(0);
+
+        //declaring event handlers
+        let clickOne;
+        let clickTwo;
+        let clickThree;
+
+
+        let choice = function(object, question, event){
+            let button = event.target; //accesses the button element that triggered the function
+            if(button.id == "buttonA"){ 
+                console.log("You pressed A"); 
+                object.value +=1;}
+            if(button.id == "buttonB"){
+                console.log("You pressed B");  
+                object.value +=2;}
+            if(button.id == "buttonC"){ 
+                console.log("You pressed C");  
+                object.value +=3;}
+            if(button.id == "buttonD"){ 
+                console.log("You pressed D");  
+                object.value += 4;}
+            if(button.id == "buttonE"){ 
+                console.log("You pressed E");  
+                object.value += 5;}
+            
+            if(object.value !=0){
+                if (question == 1) {
+                    buttons.forEach(button =>{
+                        button.removeEventListener("click", clickOne); 
+                    });
+                    questionTwo();}
+                if (question == 2) {
+                    buttons.forEach(button =>{
+                        button.removeEventListener("click", clickTwo); 
+                    });
+                    questionThree();
+                }
+                if (question == 3){
+                    buttons.forEach(button =>{
+                        button.removeEventListener("click", clickThree); 
+                    });
+                    end();
+                }
+            }
+        }
+
+        let questionOne = function(){
+            document.getElementById("paragraph").innerHTML = "blahblahblah";
+            buttonA.innerHTML = "A:  ";
+            buttonB.innerHTML = "B:  ";
+            buttonC.innerHTML = "C:  ";
+            buttonD.innerHTML = "D:  ";
+            buttonE.innerHTML = "E:  ";
+
+            clickOne = (event) => choice(one, 1, event);
+
+            buttons.forEach(button=>{//need to figure this out
+                button.addEventListener("click", clickOne);
+                //button.addEventListener("click", (event) => choice(one, 1, event));
+            });
+        }
+
+        let questionTwo = function(){
+            document.getElementById("paragraph").innerHTML = "Round two";
+            buttonA.innerHTML = "A:  2";
+            buttonB.innerHTML = "B:  2";
+            buttonC.innerHTML = "C:  2";
+            buttonD.innerHTML = "D:  2";
+            buttonE.innerHTML = "E:  2";
+
+            clickTwo = (event) => choice(two, 2, event);
+
+            buttons.forEach(button=>{//need to figure this out
+                button.addEventListener("click", clickTwo);
+                //button.addEventListener("click", (event) => choice(two, 2, event));
+            });
+        }
+
+        let questionThree = function(){
+            document.getElementById("paragraph").innerHTML = "Round three";
+            buttonA.innerHTML = "A";
+            buttonB.innerHTML = "B";
+            buttonC.innerHTML = "C";
+            buttonD.innerHTML = "D";
+            buttonE.innerHTML = "E";
+
+            clickThree = (event) => choice(three, 3, event);
+
+            buttons.forEach(button=>{//need to figure this out
+                button.addEventListener("click", clickThree);
+            });
+
+        }
+
+        let end = function(){
+            document.getElementById("paragraph").innerHTML = "The End.";
+            buttonA.innerHTML = "";
+            buttonB.innerHTML = "";
+            buttonC.innerHTML = "";
+            buttonD.innerHTML = "";
+            buttonE.innerHTML = "";
+        }
+
+
+        questionOne();
+
+
+
+    </script>  
+    -->
+</body>
+</html>
