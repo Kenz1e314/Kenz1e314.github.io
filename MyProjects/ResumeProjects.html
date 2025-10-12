@@ -25,6 +25,8 @@
             margin-right: 10px;
             overflow: scroll;
             width: 90%;
+
+            flex:  1; /*GenAI code*/
         }
         .link:hover{
             background-color:aquamarine;
@@ -38,6 +40,14 @@
         .caption{
             margin: 15px;
             text-align:  center;
+
+            flex:  1; /*GenAI code*/
+        }
+        .cardFormatting{ /*GenAI code*/
+            display:  flex;
+            flex-direction:  column;
+            justify-content:  space-around;
+            align-items:  center;
         }
         
         .wrapper{
@@ -103,21 +113,23 @@
     <br>
     <p>Independent Projects:</p>
     <div class="wrapper">
-        <div class = "HelloWorld">
+        <div class = "HelloWorld" class = "cardFormatting">
             <a target = "_blank" href = "Hello World.html" class="link">Hello World Animation</a>
             <br><p class="caption">asdfasdfasdfasdf</p>
         </div>
-        <div class="RoseCurve">
+        <div class="RoseCurve" class = "cardFormatting">
             <a target = "_blank" href = "RoseCurveAnimation.html" class="link">Rose Curve Animation</a>
             <br><p class="caption">asdfasdfasdf</p>
         </div>
-        <div class = "PersonalityTest">
+        <div class = "PersonalityTest" class = "cardFormatting">
             <a target = "_blank" href = "PersonalityTest.html" class="link">Personality Test</a>
             <p class="caption">asdfasdfasdf</p>
         </div>
         
         
-        <a target = "_blank" href = "https://github.com/Kenz1e314/Kenz1e314.github.io/tree/main/MyProjects/PythonGame" class="link" class="PythonGame">Python Game (Code)</a>
+        <div class = "PythonGame" class = "cardFormatting">
+            <a target = "_blank" href = "https://github.com/Kenz1e314/Kenz1e314.github.io/tree/main/MyProjects/PythonGame" class="link" class="PythonGame">Python Game (Code)</a>
+        </div>
         <!--<p class="PythonGame">asdfasdfasdf</p>-->
     </div>
     <br>
