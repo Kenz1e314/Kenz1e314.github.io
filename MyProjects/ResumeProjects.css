@@ -1,0 +1,235 @@
+/*ChatGPT adjustments:  
+setting wrapper3 and wrapper 4 to relative position
+setting star to absolute position
+setting wrapper3 height to 100dvh instead of 100vh
+*/
+
+wrapper3{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100%;
+    user-select: none;
+    position:  relative;
+    user-select:  none;
+    
+}
+
+/*STARS*/
+.wrapper4{
+    display:  grid;
+    grid-template-columns:  repeat(11, 1fr); /**Allows you to repeat fractional size**/
+    grid-template-rows:  repeat(11, 1fr);
+    height: 90dvh;
+    width: 100%;
+    position:  relative;
+}
+.star{
+    width: 10px; height: 10px;
+    background-color: white;
+    border: none;
+    border-radius:  50px;
+    position:  absolute;
+}
+#star1{
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  1;
+    grid-row-end:  2;
+    width: 10px; height: 10px;
+    margin: 10px;
+    animation: twinkle 12s infinite;
+}
+#star2{
+    grid-column-start:  8;
+    grid-column-end:  9;
+    grid-row-start:  1;
+    grid-row-end:  2; 
+    margin: 15px;
+}
+#star3{
+    grid-column-start:  5;
+    grid-column-end:  6;
+    grid-row-start:  2;
+    grid-row-end:  3; 
+}
+#star4{
+    grid-column-start:  10;
+    grid-column-end:  11;
+    grid-row-start:  3;
+    grid-row-end:  4;
+}
+#star5{
+    grid-column-start:  8;
+    grid-column-end:  9;
+    grid-row-start:  5;
+    grid-row-end:  6;
+    width: 10px; height: 10px;
+    animation: twinkle 7s infinite;
+}
+#star6{
+    grid-column-start:  2;
+    grid-column-end:  3;
+    grid-row-start:  4;
+    grid-row-end:  5; 
+}
+#star7{
+    grid-column-start:  4;
+    grid-column-end:  5;
+    grid-row-start:  6;
+    grid-row-end:  7; 
+    margin-left:  20px;
+    width: 10px; height: 10px;
+    animation: twinkle 10s infinite;
+}
+#star8{
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  7;
+    grid-row-end:  8; 
+    margin-left:  30px;
+}
+#star9{
+    grid-column-start:  6;
+    grid-column-end:  7;
+    grid-row-start:  4;
+    grid-row-end:  5; 
+}
+#star10{
+    grid-column-start:  1;
+    grid-column-end:  2;
+    grid-row-start:  7;
+    grid-row-end:  8; 
+    margin-left:  30px;
+}
+#star11{
+    grid-column-start:  3;
+    grid-column-end:  4;
+    grid-row-start:  9;
+    grid-row-end:  10; 
+}
+#star12{
+    grid-column-start: 7;
+    grid-column-end:  8;
+    grid-row-start:  10;
+    grid-row-end:  11; 
+    margin-left:  30px;
+}
+#star13{
+    grid-column-start:  6;
+    grid-column-end:  7;
+    grid-row-start:  7;
+    grid-row-end:  8.5; 
+    animation: twinkle 8s infinite;
+}
+#star14{
+    grid-column-start:  3;
+    grid-column-end:  4;
+    grid-row-start:  1;
+    grid-row-end:  2; 
+}
+#star15{
+    grid-column-start:  9;
+    grid-column-end:  10;
+    grid-row-start:  9;
+    grid-row-end:  10; 
+}
+#star16{
+    grid-column-start:  10;
+    grid-column-end:  11;
+    grid-row-start:  7;
+    grid-row-end:  8; 
+}
+#star17{
+    grid-column-start:  5;
+    grid-column-end:  6;
+    grid-row-start:  10;
+    grid-row-end:  11; 
+    margin-top: 30px;
+}
+#star18{
+    grid-column-start:  11;
+    grid-column-end:  12;
+    grid-row-start:  11;
+    grid-row-end:  12; 
+    margin: 30px;
+    width: 10px; height: 10px;
+    animation: twinkle 7s infinite;
+}
+#star19{
+    grid-column-start:  3;
+    grid-column-end:  4;
+    grid-row-start:  6;
+    grid-row-end:  7; 
+    margin-top: 120px;
+}
+#star20{
+    grid-column-start:  9;
+    grid-column-end:  10;
+    grid-row-start:  6;
+    grid-row-end:  7; 
+    margin-top: 160px;
+    height: 10px; width: 10px;
+    animation: twinkle 8s infinite;
+}
+#star21{
+    grid-column-start:  11;
+    grid-column-end:  12;
+    grid-row-start:  6;
+    grid-row-end:  7;
+    margin-top: 80px;
+    height: 10px; width: 10px;
+    animation: twinkle 15s infinite;
+}
+#star22{
+    grid-column-start:  2;
+    grid-column-end:  3;
+    grid-row-start:  11;
+    grid-row-end:  12;
+    height: 10px; width: 10px;
+    animation: twinkle 6s infinite;
+}
+
+@keyframes twinkle{
+    0% {height: 10px; width: 10px;}
+    25% {height: 15px; width: 15px;}
+    50% {height: 10px; width: 10px;}
+    75% {height: 18px; width: 18px;}
+    100% {height: 10px; width: 10px;}
+}
+
+/*Title*/
+#gameTitle{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(172, 186, 187);
+}
+
+/*START BUTTON*/
+#startGame{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: "center";
+    background-color:aqua; opacity: 1;
+    color: black;
+    padding:  20px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1;
+    animation: buttonLaunch 10s 1 forwards;
+    transition: 0.3s;/*This is for HOVER*/
+}
+@keyframes buttonLaunch{
+    from{background-color: black;}
+    to{background-color: aqua;}
+}
+#startGame:hover{
+    opacity: 0.85;
+}

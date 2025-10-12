@@ -5,25 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <link rel="stylesheet" href="ResumeProjects.css">
     <style>
+        html{
+            scroll-behavior:  smooth;
+        }
         body{
             margin: 0;
             padding: 0;
             /*height: 100vh;
             width: 100vw;*/
+            height: 100dvh;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:black;
+            color:white;
+            /*user-select:none;*/
+        }
+        h1, h2, p{
+            margin:  10px;
+            padding:  5px;
+        }
+        a{
+            color:aqua;
         }
         .link{
             background-color: aqua;
             color:  rgb(0, 100, 100);
             padding:  20px 15px;
             text-decoration:  none;
-            text-align: center;
             border-radius:  10px;
-            margin-top: 30px;
-            margin-bottom:  10px;
+
+            display:  block; /*GenAI--for inline elements like <a>, text-align affects how its own inline children are aligned, not its page position*/
+            text-align: center;
+            margin: 30px 10px 10px 10px;
+
             height:  30px;
-            margin-left: 10px;
-            margin-right: 10px;
             overflow: scroll;
             width: 90%;
 
@@ -39,8 +55,8 @@
             display:  none;
         }
         .caption{
-            margin: 20px;
-            padding:  10px;
+            margin: 10px;
+            padding:  5px;
             text-align:  center;
 
             flex:  1; /*GenAI code*/
@@ -48,14 +64,16 @@
         .cardFormatting{ /*GenAI code*/
             display:  flex;
             flex-direction:  column;
-            justify-content:  space-around;
+            justify-content:  center;
             align-items:  center;
+            margin:  10px;
+            padding: 5px;
         }
         
         .wrapper{
             display:  grid;
             grid-template-columns:  repeat(3, 1fr);
-            grid-template-rows:  repeat(3, 1fr);
+            grid-template-rows:  repeat(2, 1fr);
             width: 90%;
         }
 
@@ -87,7 +105,7 @@
         .wrapper2{
             display:  grid;
             grid-template-columns:  repeat(3, 1fr);
-            grid-template-rows:  repeat(3, 1fr);
+            grid-template-rows:  repeat(1, 1fr);
             width: 90%;
         }
         .APUSH{
@@ -111,37 +129,83 @@
     </style>
 </head>
 <body>
-    <h1>My Projects:</h1>
+    <!--Heading-->
+        <div class="wrapper3">
+            <div class="wrapper4">
+                <div class = "star" id="star1"></div>
+                <div class = "star" id="star2"></div>
+                <div class = "star" id="star3"></div>
+                <div class = "star" id="star4"></div>
+                <div class = "star" id="star5"></div>
+                <div class = "star" id="star6"></div>
+                <div class = "star" id="star7"></div>
+                <div class = "star" id="star8"></div>
+                <div class = "star" id="star9"></div>
+                <div class = "star" id="star10"></div>
+                <div class = "star" id="star11"></div>
+                <div class = "star" id="star12"></div>
+                <div class = "star" id="star13"></div>
+                <div class = "star" id="star14"></div>
+                <div class = "star" id="star15"></div>
+                <div class = "star" id="star16"></div>
+                <div class = "star" id="star17"></div>
+                <div class = "star" id="star18"></div>
+                <div class = "star" id="star19"></div>
+                <div class = "star" id="star20"></div>
+                <div class = "star" id="star21"></div>
+                <div class = "star" id="star22"></div>
+        
+                <div id = "gameTitle"><p>Project Highlights</p></div>
+            </div>
+            <a id="startGame" align = "center" href = "ResumeProjects.html#MyProjects">Start</a>
+
+        </div>
+    <!--End Heading-->
+
+    <br><br>
+
+
+    <h1 id="MyProjects">My Projects:</h1>
     <br>
-    <p>Independent Projects:</p>
+    <h2>Independent Projects:</h2>
     <div class="wrapper">
         <div class = "HelloWorld" class = "cardFormatting">
             <a target = "_blank" href = "Hello World.html" class="link">Hello World Animation</a>
-            <br><p class="caption">asdfasdfasdfasdf1</p>
+            <p class="caption">I converted a <a target="_blank" href="https://www.khanacademy.org/computer-programming/spin-off-of-hello-world/5744289733197824">JavaScript project I created in Khan Academy</a> into a program that could work with more standard APIs.  The project features object constructors and JavaScript drawing/animation.</p>
         </div>
         <div class="RoseCurve" class = "cardFormatting">
             <a target = "_blank" href = "RoseCurveAnimation.html" class="link">Rose Curve Animation</a>
-            <br><p class="caption">asdfasdfasdf</p>
+            <p class="caption">This project is similar to the "Hello World Animation" project, but uses what I learned in my math classes to create more interesting paths for the particles.</p>
         </div>
         <div class = "PersonalityTest" class = "cardFormatting">
             <a target = "_blank" href = "PersonalityTest.html" class="link">Personality Test</a>
-            <p class="caption">asdfasdfasdf</p>
+            <p class="caption">I converted a personality test created by a friend into a program.  In the process, I practiced working with lists and learned about embedding charts into a webpage.</p>
         </div>
-        
-        
         <div class = "PythonGame" class = "cardFormatting">
-            <a target = "_blank" href = "https://github.com/Kenz1e314/Kenz1e314.github.io/tree/main/MyProjects/PythonGame" class="link" class="PythonGame">Python Game (Code)</a>
+            <a target = "_blank" href = "https://github.com/Kenz1e314/Kenz1e314.github.io/tree/main/MyProjects/PythonGame" class="link">Python Game (Code)</a>
+            <p class="caption">This project was first created in Khan Academy (see README.md for the link) and gave me an opportunity to practice working with classes, dictionaries, lists, and processing command-line inputs.</p>
         </div>
-        <!--<p class="PythonGame">asdfasdfasdf</p>-->
+
     </div>
     <br>
     <br>
     <br>
-    <p>School Projects:</p>
+    <h2>School Projects:</h2>
     <div class="wrapper2">
-        <a target = "_blank" href = "https://kenz1e314.github.io/APUSHProject/mainpage.html" class="link" class="APUSH">APUSH Final Project</a>
-        <a target = "_blank" href = "https://kenz1e314.github.io/Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html" class="link" class="AdvCS">Advanced CS Final Project</a>
-        <a target = "_blank" href = "https://kenz1e314.github.io/WinterFestival/Final/FirstMaze.html" class="link" class="EscapeRoom">Winter Festival Escape Room</a>
+        <div class = "APUSH" class="cardFormatting">
+            <a target = "_blank" href = "../APUSHProject/mainpage.html" class="link">APUSH Final Project</a> <!--.. needed for editing on computer and not GitHub--goes up one directory; /APUSH works for GitHub but not locally-->
+            <p class="caption">I decided to create a website for my AP US History "one-pagers" assignment.  In the process, I learned about div tags in HTML; image formatting, grid displays, and other design features in CSS; and toggling in JavaScript.</p>
+        </div>
+        <div class="AdvCS" class="cardFormatting">
+            <a target = "_blank" href = "../Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html" class="link">Advanced CS Final Project</a>
+            <p class="caption">This was my submission for my Advanced CS Final Project.  This project mainly features JavaScript, using classes and conditionals to create a small game.</p>
+        </div>
+        <div class="EscapeRoom" class="cardFormatting">
+            <a target = "_blank" href = "../WinterFestival/Final/FirstMaze.html" class="link">Winter Festival Escape Room</a>
+            <p class="caption">I created this project to be part of a virtual escape room for my high school's Winter Festival.  It gave me an opportunity to learn about interactivity using JavaScript and design/debugging with generative AI.</p>
+        </div>
     </div>
+    <br>
+    <p>Note:  I also have some projects in Python and Verilog from my college classes, but I have not received permission to release them.</p>
 </body>
 </html>
