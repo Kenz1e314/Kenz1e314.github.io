@@ -200,14 +200,22 @@ wrapper3{
 }
 
 /*Title*/
-#gameTitle{
+.gameTitle{ /* August 13:  Changed this to class; added subtitle id */
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 6;
     grid-row-end: 7;
     font-size: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(172, 186, 187);
+    color:whitesmoke;
+}
+
+/* August 13th update */
+#gameSubtitle{
+    font-size:  30px;
+    text-align:  end; /* slightly better than right for translation purposes; will change if issue */
+    /*color:rgba(172, 186, 187);*/
+    color:rgb(172, 190, 195);
 }
 
 /*START BUTTON*/
