@@ -125,7 +125,33 @@
             grid-column-end:  4;
             grid-row-start:  1;
             grid-row-end:  2;
-        }    
+        }
+        
+        /* New as of August 12, 2026 (1st and 2nd year updates) */
+        .imageStyle{
+            width:  80%;
+            max-width:  800px;
+            margin:  15px 50px 8px;
+            padding:  5px;
+        }
+        
+        /* Start of GenAI code (ChatGPT) */
+        h1 {
+            margin: 5px 5px 15px;
+        }
+        h2 {
+            margin: 5px 10px 10px;
+        }
+        h3 {
+            margin: 5px 25px 10px;
+        }
+        p {
+            margin: 2px 35px 5px;
+        }
+        /* End of GenAI code */
+
+
+
     </style>
 </head>
 <body>
@@ -162,11 +188,68 @@
         </div>
     <!--End Heading-->
 
-    <br><br>
+    <br><br><br>
 
 
     <h1 id="MyProjects">My Projects:</h1>
     <br>
+    <h2>Featured Projects (College):</h2>
+    <h3>Photo and Video Editor</h3>
+        <p><b>Uses:  </b>C, Linux command line, Git (Version control)</p>
+        <p><b>Description:  </b>Throughout the course I added to the provided code for loading and saving ppm images to create a photo editor.  I also created a video editor for the final project of the course through a similar process.</p>
+        <p><b>Images:  </b></p>
+            <img src="EECS22Project4.png" class="imageStyle">
+            <p><i>Picture of the different modification options I implemented for the photo editor project</i></p>
+    
+    <br>
+    
+    <h3>Anteater Poker Game (EECS 22L)</h3>
+        <p><b>Uses:  </b>C++, Git (Version control and collaboration), TCP/IP, GTK 3.0, Linux command line</p>
+        <p><b>Description:  </b>For five weeks I was part of a team of seven that worked on building a poker game that would allow players (human- or computer-controlled) to connect to a server and play a modified version of Texas Hold'em that features our school's mascot.  I was primarily responsible for the data structures and communcation protocols, as well as the basic structure of the user display.</p>
+        <p><b>Images:  </b></p>
+            <img src="EECS22LPicture.png" class="imageStyle">
+            <p><i>Picture of two client-side terminals playing a game of poker (player names redacted for privacy)</i></p>
+    
+    <br>
+
+    <h3>Single-Cycle RISC-V Processor (EECS 31L)</h3>
+        <p><b>Uses:  </b>Verilog</p>
+        <p><b>Description:  </b>Throughout the course I built and integrated modules in Verilog to build a single-cycle RISC-V processor.  I also analyzed and debugged the program using testbench code.</p>
+        <p><b>Images:  </b></p>
+            <img src="EECS31LDiagram.png" class="imageStyle">
+            <p><i>High-level diagram of processor</i></p>
+            <br>
+            <img src="EECS31LTestbench.png" class="imageStyle">
+            <p><i>Test results (description, sample instruction code omitted for brevity)</i></p>
+        
+
+    <br>
+    <p>Note:  I have not received permission to release the code for these or other college class projects.</p>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>High School Projects:</h2>
+    <p><i>These are projects that I created for a class or for an extracurricular club.</i></p>
+    <div class="wrapper2">
+        <div class = "APUSH" class="cardFormatting">
+            <a target = "_blank" href = "../APUSHProject/mainpage.html" class="link">APUSH Final Project</a> <!--.. needed for editing on computer and not GitHub--goes up one directory; /APUSH works for GitHub but not locally-->
+            <p class="caption">I decided to create a website for my AP US History "one-pagers" assignment.  In the process, I learned about div tags in HTML; image formatting, grid displays, and other design features in CSS; and toggling in JavaScript.</p>
+        </div>
+        <div class="AdvCS" class="cardFormatting">
+            <a target = "_blank" href = "../Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html" class="link">Advanced CS Final Project</a>
+            <p class="caption">This was my submission for my Advanced CS Final Project.  This project mainly features JavaScript, using classes and conditionals to create a small game.</p>
+        </div>
+        <div class="EscapeRoom" class="cardFormatting">
+            <a target = "_blank" href = "../WinterFestival/Final/FirstMaze.html" class="link">Winter Festival Escape Room</a>
+            <p class="caption">I created this project to be part of a virtual escape room for my high school's Winter Festival.  It gave me an opportunity to learn about interactivity using JavaScript and design/debugging with generative AI.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
     <h2>Independent Projects:</h2>
     <div class="wrapper">
         <div class = "HelloWorld" class = "cardFormatting">
@@ -187,25 +270,9 @@
         </div>
 
     </div>
+    
+    
     <br>
-    <br>
-    <br>
-    <h2>School Projects:</h2>
-    <div class="wrapper2">
-        <div class = "APUSH" class="cardFormatting">
-            <a target = "_blank" href = "../APUSHProject/mainpage.html" class="link">APUSH Final Project</a> <!--.. needed for editing on computer and not GitHub--goes up one directory; /APUSH works for GitHub but not locally-->
-            <p class="caption">I decided to create a website for my AP US History "one-pagers" assignment.  In the process, I learned about div tags in HTML; image formatting, grid displays, and other design features in CSS; and toggling in JavaScript.</p>
-        </div>
-        <div class="AdvCS" class="cardFormatting">
-            <a target = "_blank" href = "../Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html" class="link">Advanced CS Final Project</a>
-            <p class="caption">This was my submission for my Advanced CS Final Project.  This project mainly features JavaScript, using classes and conditionals to create a small game.</p>
-        </div>
-        <div class="EscapeRoom" class="cardFormatting">
-            <a target = "_blank" href = "../WinterFestival/Final/FirstMaze.html" class="link">Winter Festival Escape Room</a>
-            <p class="caption">I created this project to be part of a virtual escape room for my high school's Winter Festival.  It gave me an opportunity to learn about interactivity using JavaScript and design/debugging with generative AI.</p>
-        </div>
-    </div>
-    <br>
-    <p>Note:  I also have some projects in Python and Verilog from my college classes, but I have not received permission to release them.</p>
+    <!--<p>Note:  I also have some projects in Python and Verilog from my college classes, but I have not received permission to release them.</p>-->
 </body>
 </html>
