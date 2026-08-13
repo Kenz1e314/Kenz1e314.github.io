@@ -4,4 +4,4 @@ Languages featured in this repository:  HTML, JS, CSS, Python
 
 Most important repositories:  APUSHProject, Adv CS Final Project, MyProjects, WinterFestival
 
-Note:  I have not received permission to publicly release my code for college class projects (e.g. EECS 12, EECS 31L, EECS 22 & 22L).
+Note:  I have not received permission to publicly release my code for college class projects (e.g. EECS 12, EECS 31L, EECS 22 & 22L).  I am in the process of uploading descriptions and images of these projects to Github / my resume website.
