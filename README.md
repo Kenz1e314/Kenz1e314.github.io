@@ -7,3 +7,5 @@ Languages I have worked with that are not featured in this repository:  C, C++, 
 Most important repositories:  APUSHProject, Adv CS Final Project, MyProjects, WinterFestival
 
 Note:  I have not received permission to publicly release my code for college class projects (e.g. EECS 12, EECS 31L, EECS 22 & 22L).  I am in the process of uploading descriptions and images of these projects to Github / my resume website.
+
+
