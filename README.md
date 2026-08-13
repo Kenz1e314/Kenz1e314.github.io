@@ -1,6 +1,8 @@
 Welcome to my repository!  I have uploaded some of my independent projects and high school projects here.
 
 Languages featured in this repository:  HTML, JS, CSS, Python
+Languages I have worked with that are not featured in this repository:  C, C++, Verilog
+(I also have some experience with Java and MATLAB, but have not used them substantially recently.)
 
 Most important repositories:  APUSHProject, Adv CS Final Project, MyProjects, WinterFestival
 
