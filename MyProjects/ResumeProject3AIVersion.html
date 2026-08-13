@@ -1,0 +1,486 @@
+<!--NOTE:  THIS IS GENERATIVE AI CODE BASED ON ResumeProjects2.html-->
+<!--For learning/creative reference purposes only-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="ResumeProjects.css">
+
+    <style>
+        :root {
+            --background: #0b0d10;
+            --surface: #12161b;
+            --surface-hover: #171c22;
+            --border: #2a323b;
+            --text: #e8edf2;
+            --muted: #aab4be;
+            --accent: aqua;
+            --accent-soft: #9fffff;
+            --content-width: 1100px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100dvh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        a:hover {
+            color: var(--accent-soft);
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        /* Keep the existing star / Project Highlights intro from ResumeProjects.css. */
+        #gameTitle p {
+            margin: 0;
+        }
+
+        #startGame {
+            text-decoration: none;
+        }
+
+        main {
+            width: min(var(--content-width), 90%);
+            margin: 0 auto;
+            padding: 72px 0 80px;
+        }
+
+        .page-header {
+            margin-bottom: 56px;
+        }
+
+        .page-header h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .page-intro {
+            max-width: 720px;
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .project-section {
+            margin-top: 64px;
+        }
+
+        .section-heading {
+            margin: 0 0 28px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            font-size: clamp(1.55rem, 3vw, 2rem);
+            line-height: 1.2;
+        }
+
+        .section-note {
+            max-width: 760px;
+            margin: -12px 0 26px;
+            color: var(--muted);
+        }
+
+        .featured-projects {
+            display: grid;
+            gap: 32px;
+        }
+
+        .project-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: clamp(20px, 4vw, 32px);
+        }
+
+        .project-card:hover {
+            background: var(--surface-hover);
+        }
+
+        .project-card h3 {
+            margin: 0 0 6px;
+            font-size: 1.45rem;
+            line-height: 1.25;
+        }
+
+        .project-meta {
+            margin: 0 0 18px;
+            color: var(--accent-soft);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .project-description {
+            max-width: 800px;
+            margin: 0;
+        }
+
+        .project-figure {
+            margin: 24px 0 0;
+        }
+
+        .project-figure img {
+            display: block;
+            width: 100%;
+            max-width: 850px;
+            height: auto;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+        }
+
+        .project-figure figcaption {
+            max-width: 850px;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .image-grid .project-figure {
+            margin: 0;
+        }
+
+        .image-grid .project-figure img {
+            width: 100%;
+        }
+
+        .code-note {
+            margin: 24px 0 0;
+            padding: 14px 16px;
+            border-left: 3px solid var(--accent);
+            background: rgba(0, 255, 255, 0.05);
+            color: var(--muted);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .small-project-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        .small-project-card:hover {
+            background: var(--surface-hover);
+        }
+
+        .small-project-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+
+        .small-project-card p {
+            margin: 0 0 20px;
+            color: var(--muted);
+        }
+
+        .project-link {
+            align-self: flex-start;
+            margin-top: auto;
+            padding: 8px 13px;
+            border: 1px solid var(--accent);
+            border-radius: 7px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 650;
+        }
+
+        .project-link:hover {
+            background: rgba(0, 255, 255, 0.08);
+            color: var(--accent-soft);
+        }
+
+        @media (max-width: 720px) {
+            main {
+                width: min(92%, var(--content-width));
+                padding-top: 52px;
+            }
+
+            .project-section {
+                margin-top: 52px;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Existing introductory / star section -->
+    <div class="wrapper3">
+        <div class="wrapper4">
+            <div class="star" id="star1"></div>
+            <div class="star" id="star2"></div>
+            <div class="star" id="star3"></div>
+            <div class="star" id="star4"></div>
+            <div class="star" id="star5"></div>
+            <div class="star" id="star6"></div>
+            <div class="star" id="star7"></div>
+            <div class="star" id="star8"></div>
+            <div class="star" id="star9"></div>
+            <div class="star" id="star10"></div>
+            <div class="star" id="star11"></div>
+            <div class="star" id="star12"></div>
+            <div class="star" id="star13"></div>
+            <div class="star" id="star14"></div>
+            <div class="star" id="star15"></div>
+            <div class="star" id="star16"></div>
+            <div class="star" id="star17"></div>
+            <div class="star" id="star18"></div>
+            <div class="star" id="star19"></div>
+            <div class="star" id="star20"></div>
+            <div class="star" id="star21"></div>
+            <div class="star" id="star22"></div>
+
+            <div id="gameTitle"><p>Project Highlights</p></div>
+        </div>
+        <a id="startGame" href="#MyProjects">Start</a>
+    </div>
+    <!-- End introductory / star section -->
+
+    <main>
+        <header class="page-header" id="MyProjects">
+            <h1>My Projects</h1>
+            <p class="page-intro">
+                Selected software and engineering work, including college coursework,
+                independent projects, and earlier projects.
+            </p>
+        </header>
+
+        <section class="project-section" aria-labelledby="college-projects">
+            <h2 class="section-heading" id="college-projects">Featured College Projects</h2>
+
+            <div class="featured-projects">
+                <article class="project-card">
+                    <h3>Photo and Video Editor</h3>
+                    <p class="project-meta">C · Linux command line · Git</p>
+                    <p class="project-description">
+                        Throughout the course I added to the provided code for loading and saving
+                        PPM images to create a photo editor. I also created a video editor for the
+                        final project of the course through a similar process.
+                    </p>
+
+                    <figure class="project-figure">
+                        <img
+                            src="EECS22Project4.png"
+                            alt="Photo editor interface showing image modification options"
+                        >
+                        <figcaption>
+                            Different modification options I implemented for the photo editor project.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="project-card">
+                    <h3>Anteater Poker Game <span aria-label="course">(EECS 22L)</span></h3>
+                    <p class="project-meta">C++ · TCP/IP · GTK 3.0 · Git · Linux command line</p>
+                    <p class="project-description">
+                        For five weeks I was part of a team of seven that built a poker game in which
+                        human- or computer-controlled players could connect to a server and play a
+                        modified version of Texas Hold'em featuring our school's mascot. I was primarily
+                        responsible for the data structures and communication protocols, as well as the
+                        basic structure of the user display.
+                    </p>
+
+                    <figure class="project-figure">
+                        <img
+                            src="EECS22LPicture.png"
+                            alt="Two client-side terminals connected to the Anteater Poker game"
+                        >
+                        <figcaption>
+                            Two client-side terminals playing a game of poker; player names are redacted for privacy.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="project-card">
+                    <h3>Single-Cycle RISC-V Processor <span aria-label="course">(EECS 31L)</span></h3>
+                    <p class="project-meta">Verilog · Testbenches · Digital logic</p>
+                    <p class="project-description">
+                        Throughout the course I built and integrated modules in Verilog to create a
+                        single-cycle RISC-V processor. I also analyzed and debugged the design using
+                        testbench code.
+                    </p>
+
+                    <div class="image-grid">
+                        <figure class="project-figure">
+                            <img
+                                src="EECS31LDiagram.png"
+                                alt="High-level diagram of the single-cycle RISC-V processor"
+                            >
+                            <figcaption>High-level diagram of the processor.</figcaption>
+                        </figure>
+
+                        <figure class="project-figure">
+                            <img
+                                src="EECS31LTestbench.png"
+                                alt="Testbench results for the RISC-V processor"
+                            >
+                            <figcaption>
+                                Testbench results; description and sample instruction code omitted for brevity.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+
+            <p class="code-note">
+                Source code for these and other college course projects is not posted publicly because
+                I have not received permission to release it.
+            </p>
+        </section>
+
+        <section class="project-section" aria-labelledby="independent-projects">
+            <h2 class="section-heading" id="independent-projects">Independent Projects</h2>
+
+            <div class="project-grid">
+                <article class="small-project-card">
+                    <h3>Hello World Animation</h3>
+                    <p>
+                        I converted a JavaScript project I originally created in Khan Academy into a
+                        program that works with more standard APIs. The project features object
+                        constructors and JavaScript drawing and animation.
+                    </p>
+                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="Hello World.html">
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="small-project-card">
+                    <h3>Rose Curve Animation</h3>
+                    <p>
+                        A JavaScript drawing and animation project that uses mathematical curves to
+                        generate particle paths.
+                    </p>
+                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="RoseCurveAnimation.html">
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="small-project-card">
+                    <h3>Personality Test</h3>
+                    <p>
+                        I converted a personality test created by a friend into an interactive webpage,
+                        working with lists and embedded charts to calculate and display results.
+                    </p>
+                    <a class="project-link" target="_blank" rel="noopener noreferrer" href="PersonalityTest.html">
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="small-project-card">
+                    <h3>Python Game</h3>
+                    <p>
+                        A command-line game using classes, dictionaries, lists, and processed user input.
+                        The project was originally created in Khan Academy and later adapted to Python.
+                    </p>
+                    <a
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/Kenz1e314/Kenz1e314.github.io/tree/main/MyProjects/PythonGame"
+                    >
+                        View Code →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section" aria-labelledby="earlier-projects">
+            <h2 class="section-heading" id="earlier-projects">Earlier Projects</h2>
+            <p class="section-note">
+                Projects created for high-school classes or extracurricular activities.
+            </p>
+
+            <div class="project-grid">
+                <article class="small-project-card">
+                    <h3>APUSH Final Project</h3>
+                    <p>
+                        I created a website for my AP U.S. History “one-pagers” assignment, using HTML,
+                        CSS Grid, image formatting, and JavaScript toggling.
+                    </p>
+                    <a
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="../APUSHProject/mainpage.html"
+                    >
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="small-project-card">
+                    <h3>Advanced CS Final Project</h3>
+                    <p>
+                        A small JavaScript game created for an Advanced Computer Science final project,
+                        using classes and conditional logic.
+                    </p>
+                    <a
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="../Adv%20CS%20Final%20Project/S2U6%20Final%20Project.html"
+                    >
+                        View Project →
+                    </a>
+                </article>
+
+                <article class="small-project-card">
+                    <h3>Winter Festival Escape Room</h3>
+                    <p>
+                        An interactive browser project created for a virtual escape room at my high
+                        school's Winter Festival, using JavaScript interaction and iterative debugging.
+                    </p>
+                    <a
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="../WinterFestival/Final/FirstMaze.html"
+                    >
+                        View Project →
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

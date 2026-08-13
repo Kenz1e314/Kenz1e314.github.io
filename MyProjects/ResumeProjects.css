@@ -217,7 +217,8 @@ wrapper3{
     margin-right: auto;
     width: 200px;
     text-align: "center";
-    background-color:aqua; opacity: 1;
+    /*background-color:aqua; opacity: 1;  CHANGE AUGUST 13 2026 */
+    background-color:  rgb(0,210,210);  opacity:  1;
     color: black;
     padding:  20px 15px;
     border-radius: 10px;
@@ -228,7 +229,7 @@ wrapper3{
 }
 @keyframes buttonLaunch{
     from{background-color: black;}
-    to{background-color: aqua;}
+    to{background-color:  rgb(0,210,210);}
 }
 #startGame:hover{
     opacity: 0.85;
